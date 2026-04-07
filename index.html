@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>國中會考英語單字複習</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #21262d;
+  --border: #30363d;
+  --accent: #f0883e;
+  --accent2: #58a6ff;
+  --green: #3fb950;
+  --red: #f85149;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --radius: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at 30% 20%, rgba(88,166,255,0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(240,136,62,0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── HEADER ── */
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+  animation: fadeDown 0.6s ease;
+}
+.header h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+.header p {
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ── CARD ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  animation: fadeUp 0.5s ease;
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+/* ── COUNT SELECTION ── */
+.count-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.count-btn {
+  flex: 1;
+  min-width: 60px;
+  padding: 14px 12px;
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+}
+.count-btn::after {
+  content: attr(data-label);
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+.count-btn:hover, .count-btn.active {
+  border-color: var(--accent);
+  background: rgba(240,136,62,0.1);
+  color: var(--accent);
+}
+.count-btn.active::after { color: var(--accent); opacity: 0.7; }
+
+/* ── START BUTTON ── */
+.btn-start {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--accent), #e07b30);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 24px rgba(240,136,62,0.3);
+}
+.btn-start:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(240,136,62,0.4);
+}
+.btn-start:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ── SETUP INFO ── */
+.setup-info {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.setup-info span { color: var(--accent2); font-weight: 600; }
+
+/* ── QUIZ SCREEN ── */
+.quiz-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.progress-bar-wrap {
+  flex: 1;
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 99px;
+  overflow: hidden;
+  min-width: 120px;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+.progress-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.score-live {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.score-live .correct-count { color: var(--green); font-weight: 700; }
+
+.question-stem {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 26px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.blank {
+  display: inline-block;
+  min-width: 60px;
+  border-bottom: 2px solid var(--accent2);
+  color: var(--accent2);
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+.options-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.option-btn {
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  padding: 14px 18px;
+  cursor: pointer;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 0.95rem;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: all 0.18s;
+  line-height: 1.5;
+}
+.option-btn:hover:not(:disabled) {
+  border-color: var(--accent2);
+  background: rgba(88,166,255,0.07);
+  transform: translateX(3px);
+}
+.option-letter {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--accent2);
+  min-width: 18px;
+  margin-top: 1px;
+}
+.option-btn.correct {
+  border-color: var(--green);
+  background: rgba(63,185,80,0.12);
+}
+.option-btn.correct .option-letter { color: var(--green); }
+.option-btn.wrong {
+  border-color: var(--red);
+  background: rgba(248,81,73,0.12);
+}
+.option-btn.wrong .option-letter { color: var(--red); }
+
+/* ── FEEDBACK ── */
+.feedback-box {
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: none;
+  animation: feedbackIn 0.3s ease;
+}
+.feedback-box.show { display: block; }
+.feedback-box.correct-fb {
+  border-color: rgba(63,185,80,0.5);
+  background: rgba(63,185,80,0.07);
+}
+.feedback-box.wrong-fb {
+  border-color: rgba(248,81,73,0.5);
+  background: rgba(248,81,73,0.07);
+}
+.feedback-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.correct-fb .feedback-title { color: var(--green); }
+.wrong-fb .feedback-title { color: var(--red); }
+.feedback-answer {
+  font-size: 0.92rem;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.feedback-explanation {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── NEXT BUTTON ── */
+.btn-next {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--accent2), #3d8fdb);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: none;
+  box-shadow: 0 4px 20px rgba(88,166,255,0.25);
+}
+.btn-next.show { display: block; }
+.btn-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(88,166,255,0.35);
+}
+
+/* ── RESULTS SCREEN ── */
+.results-top {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.score-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--border);
+  flex-shrink: 0;
+}
+.score-circle.score-high { border-color: var(--green); background: rgba(63,185,80,0.1); }
+.score-circle.score-mid  { border-color: var(--accent); background: rgba(240,136,62,0.1); }
+.score-circle.score-low  { border-color: var(--red); background: rgba(248,81,73,0.1); }
+.score-pct {
+  font-family: 'Sora', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.score-high .score-pct { color: var(--green); }
+.score-mid  .score-pct { color: var(--accent); }
+.score-low  .score-pct { color: var(--red); }
+.score-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  flex: 1;
+}
+.stat-item {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+.stat-val {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.stat-lbl {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* ── RESULT ACCORDION ── */
+.result-section-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.result-item {
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.result-item.wrong-item { border-color: rgba(248,81,73,0.35); }
+.result-item.open .ri-body { display: block; }
+
+.ri-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.ri-header:hover { background: rgba(255,255,255,0.03); }
+
+.ri-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+  min-width: 22px;
+  text-align: center;
+}
+.ri-icon {
+  font-size: 0.95rem;
+  font-weight: 700;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.wrong-item .ri-icon { color: var(--red); }
+.result-item:not(.wrong-item) .ri-icon { color: var(--green); }
+
+.ri-stem {
+  flex: 1;
+  font-size: 0.88rem;
+  color: var(--text);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}
+.ri-ans {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.ri-wrong-ans { color: var(--red); }
+.ri-arrow {
+  font-size: 0.7rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.result-item.open .ri-arrow { transform: rotate(180deg); }
+
+.ri-body {
+  display: none;
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+.ri-full-stem {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: var(--text);
+  padding: 14px 0 12px;
+  font-weight: 500;
+}
+.ri-options { display: grid; gap: 7px; margin-bottom: 12px; }
+.ri-opt {
+  display: flex;
+  gap: 10px;
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid transparent;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.ri-opt.opt-correct {
+  border-color: rgba(63,185,80,0.4);
+  background: rgba(63,185,80,0.08);
+  color: var(--text);
+}
+.ri-opt.opt-wrong-chosen {
+  border-color: rgba(248,81,73,0.4);
+  background: rgba(248,81,73,0.08);
+  color: var(--text);
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+.opt-letter { font-weight: 700; flex-shrink: 0; }
+.opt-correct .opt-letter { color: var(--green); }
+.opt-wrong-chosen .opt-letter { color: var(--red); }
+
+.ri-explanation {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.75;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent2);
+}
+
+/* ── RESULT BUTTONS ── */
+.result-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+.btn-retry {
+  padding: 14px;
+  background: var(--surface2);
+  border: 1.5px solid var(--accent);
+  border-radius: 12px;
+  color: var(--accent);
+  font-family: 'Sora', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  line-height: 1.4;
+}
+.btn-retry:hover {
+  background: rgba(240,136,62,0.12);
+  transform: translateY(-1px);
+}
+.btn-next-round {
+  padding: 14px;
+  background: linear-gradient(135deg, var(--accent), #e07b30);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  line-height: 1.4;
+  box-shadow: 0 4px 20px rgba(240,136,62,0.3);
+}
+.btn-next-round:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(240,136,62,0.4);
+}
+
+/* ── SCREEN MANAGEMENT ── */
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes feedbackIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 560px) {
+  .card { padding: 20px; }
+  .results-top { flex-direction: column; align-items: flex-start; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .result-actions { grid-template-columns: 1fr; }
+  .ri-stem { font-size: 0.82rem; }
+}
+
+/* ── CONGRATS EMOJI ── */
+.result-emoji {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.result-msg {
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Wrong label badge */
+.wrong-badge {
+  display: inline-block;
+  background: rgba(248,81,73,0.15);
+  border: 1px solid rgba(248,81,73,0.4);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.7rem;
+  color: var(--red);
+  font-weight: 600;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <h1>國中會考英語單字複習</h1>
+    <p>歷屆試題值得你一刷再刷</p>
+  </div>
+
+  <!-- ── SETUP SCREEN ── -->
+  <div class="screen active" id="screen-setup">
+    <div class="card">
+      <div class="section-label">選擇練習題數</div>
+      <div class="setup-info">
+        📚 題目來自歷屆會考，題目將隨機排列，請選擇要練習的題數。
+      </div>
+      <div class="count-row">
+        <button class="count-btn" data-count="5" data-label="題">5</button>
+        <button class="count-btn" data-count="10" data-label="題">10</button>
+        <button class="count-btn" data-count="15" data-label="題">15</button>
+        <button class="count-btn" data-count="20" data-label="題">20</button>
+      </div>
+      <button class="btn-start" id="btn-start" disabled>開始練習 →</button>
+    </div>
+  </div>
+
+  <!-- ── QUIZ SCREEN ── -->
+  <div class="screen" id="screen-quiz">
+    <div class="card">
+      <div class="quiz-meta">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progress-bar" style="width:0%"></div>
+        </div>
+        <div class="progress-text" id="progress-text">第 1 / 10 題</div>
+        <div class="score-live">答對 <span class="correct-count" id="live-correct">0</span> 題</div>
+      </div>
+      <div class="question-stem" id="question-stem"></div>
+      <div class="options-grid" id="options-grid"></div>
+      <div class="feedback-box" id="feedback-box">
+        <div class="feedback-title" id="feedback-title"></div>
+        <div class="feedback-answer" id="feedback-answer"></div>
+        <div class="feedback-explanation" id="feedback-explanation"></div>
+      </div>
+      <button class="btn-next" id="btn-next">下一題 →</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS SCREEN ── -->
+  <div class="screen" id="screen-results">
+    <div class="card">
+      <div class="result-emoji" id="result-emoji">🎉</div>
+      <div class="result-msg" id="result-msg"></div>
+      <div class="results-top">
+        <div class="score-circle" id="score-circle">
+          <div class="score-pct" id="score-pct">--%</div>
+          <div class="score-label">答對率</div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-val" id="stat-time">--</div>
+            <div class="stat-lbl">練習時間</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-val" id="stat-correct" style="color:var(--green)">--</div>
+            <div class="stat-lbl">答對題數</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-val" id="stat-wrong" style="color:var(--red)">--</div>
+            <div class="stat-lbl">答錯題數</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-section-title">題目一覽表</div>
+      <div id="result-list"></div>
+
+      <div class="result-actions">
+        <button class="btn-retry" id="btn-retry">🔀 再重新挑一次<br><small style="font-weight:400;font-size:0.75rem;">（同題組隨機排列）</small></button>
+        <button class="btn-next-round" id="btn-next-round">🚀 點我進入下一回合<br><small style="font-weight:400;font-size:0.75rem;">（重新選擇題數）</small></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const QUESTIONS = [{"number":1,"year":106,"exam":"106教育會考","question":"We are surprised that Sally and Ray decided to get married. No one knows ______. They often fight with each other and are unhappy together.","options":{"A":"why","B":"where","C":"when","D":"how"},"answer":"A","explanation":"關鍵字為 surprised，會「驚訝」表示對 Sally 與 Ray兩人決定結婚的「原因」不明，與「原因、理由」相關的疑問詞為 why，故選(A)。"},{"number":3,"year":103,"exam":"103教育會考","question":"Oliver ______ with joy when he saw his favorite band. He kept saying loudly, \"I love you guys!\"","options":{"A":"waited","B":"shouted","C":"listened","D":"agreed"},"answer":"B","explanation":"第二句用來補充說明第一句內容，而與第二句 sayingloudly（大聲說）相關的動詞為只有選項 (B)「大聲喊叫」。"},{"number":4,"year":103,"exam":"103教育會考","question":"More and more cows on this farm are getting sick. The problem is so ______ that the farm will be closed from tomorrow on.","options":{"A":"heavy","B":"popular","C":"serious","D":"strong"},"answer":"C","explanation":"第二句的 The problem指的是第一句所描述的事情。第一句指出有越來越多牛隻生病，表示這問題（Theproblem）很嚴重（serious），故選 (C)。"},{"number":5,"year":106,"exam":"106教育會考","question":"I'm glad that my school has students wear ______. I don't have to worry about what clothes to wear to school.","options":{"A":"belts","B":"caps","C":"gloves","D":"uniforms"},"answer":"D","explanation":"關鍵詞為 what clothes towear，不用擔心「穿什麼衣服」去學校，是因為學校規定學生要穿「制服（uniforms）」，故選(D)。"},{"number":6,"year":106,"exam":"106教育會考","question":"Jim always forgets my birthday. He has asked me many times and still can't ______ it.","options":{"A":"answer","B":"celebrate","C":"remember","D":"understand"},"answer":"C","explanation":"關鍵字為 forgets，第二句為補充說明 Jim的這種「健忘」狀況是問了許多次，但仍然「記不得（can't remember）」，故選(C)。"},{"number":7,"year":103,"exam":"103教育會考","question":"Some songs are forgotten very quickly. A really good song can pass the test of ______ and be remembered for many, many years.","options":{"A":"knowledge","B":"sound","C":"time","D":"weather"},"answer":"C","explanation":"are forgotten very quickly（很快被遺忘）、be remembered for many,many years（被記得多年），可判斷兩句內容均跟時間有關，故選(C)（通過）「時間」（的考驗）。"},{"number":8,"year":106,"exam":"106教育會考","question":"My sister wants to buy a car ______ she doesn't have enough money.","options":{"A":"because","B":"but","C":"if","D":"or"},"answer":"B","explanation":"「想要買車（wants to buy a car）」與「沒有足夠的錢（doesn't haveenough money）」之間有「轉折」之意，因此空格要填入有「轉折」意味的連接詞but，故選 (B)。"},{"number":11,"year":106,"exam":"106教育會考","question":"Amy's father is very sick. The doctors can do nothing for him, so Amy went to the temple to ______ for him.","options":{"A":"care","B":"count","C":"look","D":"pray"},"answer":"D","explanation":"關鍵字為temple，會到「廟宇」裡，通常是為了向神明「祈禱（pray）、祈福」，故選(D)。"},{"number":12,"year":105,"exam":"105教育會考","question":"Chris：Which ______ looks better on me? Penny：I think purple's better. You look great in purple.","options":{"A":"color","B":"grade","C":"shape","D":"size"},"answer":"A","explanation":"關鍵字為 purple（紫色），故選 (A)。"},{"number":14,"year":111,"exam":"111教育會考","question":"It was ______ for us to answer the math question because we've done the same kind of questions many times.","options":{"A":"common","B":"easy","C":"safe","D":"special"},"answer":"B","explanation":"因為已經做過同樣類型的題目很多次，要再作答應該是「容易的」，故選(B)。"},{"number":15,"year":110,"exam":"110教育補考","question":"Every time my family goes out, my brother is always the last one to ______. We often have to wait for him for a long time.","options":{"A":"cheer up","B":"get ready","C":"give up","D":"slow down"},"answer":"B","explanation":"由「時常必須等他很久」，可知他總是最後一個「準備好」，故選 (B)。"},{"number":17,"year":110,"exam":"110教育補考","question":"When Cindy ______ cleaning her room, she looked around and felt proud of herself.","options":{"A":"finished","B":"liked","C":"minded","D":"missed"},"answer":"A","explanation":"應該是因為「完成」打掃房間這件事，才會看看周圍並以自己為傲。"},{"number":20,"year":112,"exam":"112教育會考","question":"Mr. Lee has worked in the same store for ten years; he's never thought about ______ his job.","options":{"A":"changing","B":"finding","C":"remembering","D":"starting"},"answer":"A","explanation":"由「已在同一間店工作十年」，可推知李先生從沒想過要「換」工作，故選(A)。"},{"number":21,"year":110,"exam":"110教育補考","question":"Lisa is happy that she got a good ______ on her history test. She prepared for it for days.","options":{"A":"grade","B":"idea","C":"lesson","D":"question"},"answer":"A","explanation":"由「很高興」及後句說「準備了好幾天」，可知是得到了一個好「成績」。"},{"number":22,"year":111,"exam":"111教育會考","question":"We won't see the sun even after the typhoon leaves, because the news said that heavier rain will soon ______.","options":{"A":"catch","B":"follow","C":"move","D":"stop"},"answer":"B","explanation":"就算颱風已經離開也看不到太陽，應該是因為還有更強的雨勢「跟隨」而至，故選(B)。"},{"number":23,"year":103,"exam":"103教育會考","question":"Helen：Can you turn off the TV? I can't study with the ______. Troy：You can just go back to your room so you won't hear it.","options":{"A":"noise","B":"heat","C":"power","D":"light"},"answer":"A","explanation":"由 hear（聽到）可判斷 Helen 是因為聲音而分心，只有選項(A)「噪音」與聲音有關，故選之。"},{"number":24,"year":109,"exam":"109教育補考","question":"Fire fighters need to wear ______ before going into a burning house, so smoke won't get into their nose and throat.","options":{"A":"belts","B":"gloves","C":"jackets","D":"masks"},"answer":"D","explanation":"由後半句「所以煙霧不會跑進他們的鼻喉」可知，消防員在進入著火的房子前必須戴著「面罩」，故選(D)。"},{"number":25,"year":109,"exam":"109教育補考","question":"Although it's been ten years, it still hurts Ronald to talk about how he ______ the chance to take a picture with his favorite baseball player.","options":{"A":"missed","B":"failed","C":"ended","D":"broke"},"answer":"A","explanation":"由句意可知，Ronald因「錯過」和他最喜歡的棒球員合照，所以雖然歷經十年，談起此事仍令他傷心，故選(A)。"},{"number":26,"year":113,"exam":"113教育會考","question":"It's not a good idea to go mountain climbing in this bad ______. We should wait until the typhoon goes away.","options":{"A":"chance","B":"dream","C":"habit","D":"weather"},"answer":"D","explanation":"由後句「我們應該等到颱風過去」，推知在「天氣」不好的時候去爬山不是個好主意，故選(D)。"},{"number":27,"year":113,"exam":"113教育會考","question":"My ______ hurts so much that I cannot even turn my head.","options":{"A":"arm","B":"knee","C":"neck","D":"stomach"},"answer":"C","explanation":"由後句「無法轉頭」，推知是「脖子」痛，故選 (C)。"},{"number":28,"year":112,"exam":"112教育會考","question":"Mrs. Johnson can't hear very well. If you need to talk to her, you must ______.","options":{"A":"explain","B":"hurry","C":"listen","D":"shout"},"answer":"D","explanation":"由前句「聽不清楚」，可推知若和 Johnson太太講話必須「大聲說」，故選 (D)。"},{"number":29,"year":110,"exam":"110教育會考","question":"Steven wants to be a ______, because he loves to watch people enjoy the food he prepares.","options":{"A":"cook","B":"doctor","C":"driver","D":"farmer"},"answer":"A","explanation":"he prepares 為省略受格 that / which 的關係子句，用來形容 thefood。而關鍵字為prepares，喜歡看人享用他「所煮」食物的人應該是「廚師」，故選 (A)。"},{"number":30,"year":110,"exam":"110教育補考","question":"Kyle's so ______ that he always thinks he's right. That's why he never says sorry even when he does something wrong.","options":{"A":"lazy","B":"proud","C":"quiet","D":"serious"},"answer":"B","explanation":"總是覺得自己是對的，而且做錯事也從不道歉，可知 Kyle是很「驕傲的」。"},{"number":31,"year":106,"exam":"106教育會考","question":"In the past, people thought it was a ______ idea to send e-mails and read news online, but now it is part of our everyday life.","options":{"A":"simple","B":"popular","C":"good","D":"fresh"},"answer":"D","explanation":"關鍵詞為 In the past 與 butnow，表示在做「過去」與「現在」的比較，且具有轉折意味；因此若對「現在」而言已成為是生活的一部分時，即表示不再同「過去」剛出爐般「新鮮（fresh）」了，故選(D)。"},{"number":32,"year":111,"exam":"111教育會考","question":"Don't let the children swim in the river. We don't know how ______ it is. It could be dangerous.","options":{"A":"deep","B":"far","C":"long","D":"thick"},"answer":"A","explanation":"不要讓孩子們在河裡游泳，後句又說可能很危險，可推知是不知道河有多「深」，故選(A)。"},{"number":33,"year":108,"exam":"108教育會考","question":"Tom's voice ______ when he talks about his neighbors. He speaks faster, his face becomes redder and you can almost see fire in his eyes.","options":{"A":"appears","B":"drops","C":"grows","D":"rises"},"answer":"D","explanation":"由後句「他臉變更紅、眼睛充滿怒火」可知，Tom在生氣，一個人生氣時，通常音量會「提高」，故選 (D)。"},{"number":34,"year":111,"exam":"111教育補考","question":"I can't believe you ______ started doing your homework. Didn't I tell you to do it right after you got home?","options":{"A":"also","B":"even","C":"just","D":"still"},"answer":"C","explanation":"由後句「我不是要你一回家就寫作業嗎？」可知，對方應是「剛剛才」開始寫作業。"},{"number":35,"year":109,"exam":"109教育會考","question":"My mom puts the ______ on to keep her hands away from water when she washes the dishes.","options":{"A":"gloves","B":"jacket","C":"ring","D":"socks"},"answer":"A","explanation":"後句提到戴上該物是為了防止洗碗時，手與水的接觸，可知戴上的是「手套」，故選(A)。"},{"number":36,"year":111,"exam":"111教育會考","question":"The movie starts at two o'clock, ______ let's meet at the theater at one forty-five.","options":{"A":"so","B":"or","C":"if","D":"because"},"answer":"A","explanation":"後半句說「要一點四十五在戲院碰面」是前句「電影兩點開始」的結果，故用so（所以）連接，故選 (A)。"},{"number":37,"year":112,"exam":"112教育會考","question":"Dennis enjoys ______ in public. He is proud of his beautiful voice.","options":{"A":"dancing","B":"drawing","C":"shopping","D":"singing"},"answer":"D","explanation":"由後句「對他優美的嗓音感到自豪」，可推知 Dennis享受在公開場合「唱歌」，故選 (D)。"},{"number":38,"year":109,"exam":"109教育補考","question":"Dylan looks a lot younger than his ______. Though he's already 30 now, many think he's still in high school when they first meet him.","options":{"A":"time","B":"mind","C":"face","D":"age"},"answer":"D","explanation":"由第二句「雖然已經三十歲了，但許多人第一次見到 Dylan時仍以為他只是中學生」可知，Dylan 看起來比他實際「年齡」年輕許多，故選(D)。"},{"number":39,"year":109,"exam":"109教育會考","question":"The beach near our town is a very ______ place. Every summer at least one kid dies there in the water.","options":{"A":"dangerous","B":"exciting","C":"lonely","D":"popular"},"answer":"A","explanation":"第二句提到每年夏天都有孩子不幸喪生，可知該海灘很「危險」，故選(A)。"},{"number":40,"year":105,"exam":"105教育會考","question":"I told you this road went the wrong way, but you just wouldn't listen. Now we have to ______ and take another road.","options":{"A":"go ahead","B":"move away","C":"pass by","D":"turn back"},"answer":"D","explanation":"關鍵詞為 went the wrong way（走錯路）」，走錯路通常得「調頭（turnback）」，故選 (D)。"},{"number":42,"year":109,"exam":"109教育補考","question":"Don't forget that Mom and Dad won't be home until next Wednesday. Until ______, we have to prepare meals ourselves.","options":{"A":"late","B":"now","C":"then","D":"today"},"answer":"C","explanation":"由第一句描述爸媽到下週三之前都不會在家，可知到「那時（下週三）」為止，我們都得自己準備餐點，故選(C)。"},{"number":43,"year":111,"exam":"111教育會考","question":"Kevin has only enough money for the bag or the shoes. That is a hard ______ to make because he likes them both.","options":{"A":"choice","B":"gift","C":"rule","D":"trick"},"answer":"A","explanation":"錢不夠買兩種，但又兩種都喜歡，可推知會是一個很難的「選擇」，故選(A)。"},{"number":44,"year":111,"exam":"111教育補考","question":"Sorry, but Ms. Shih can't talk right now. Could you please call back ______?","options":{"A":"finally","B":"later","C":"next","D":"slowly"},"answer":"B","explanation":"由現在不能通話可知，應該是請對方「晚點」再致電，故選 (B)。"},{"number":45,"year":111,"exam":"111教育補考","question":"I used to ______ this store, but I sold it when business started to go down.","options":{"A":"buy","B":"own","C":"pass","D":"visit"},"answer":"B","explanation":"由後句「但我在生意變差時將它賣掉了」可知，過去「擁有」這間商店。"},{"number":46,"year":110,"exam":"110教育補考","question":"During the race yesterday, Julie ______ got to the finish line first. However, she fell at the last second and only came in third in the end.","options":{"A":"almost","B":"already","C":"finally","D":"quickly"},"answer":"A","explanation":"由後句的說明可知，最後因為跌倒而只拿到第三名，可知是「幾乎」抵達終點線了，其他三個選項語意上都是已經抵達，與後句矛盾。"},{"number":47,"year":105,"exam":"105教育會考","question":"Mark studies very hard and never ______ classes. He goes to school even when he is sick.","options":{"A":"loses","B":"misses","C":"changes","D":"forgets"},"answer":"B","explanation":"第二句說明了 Mark 去上學的狀況---goes to school even when he issick（即使生病也去上學），可推知 Mark 從未錯過（nevermisses）任何一節課，故選 (B)。"},{"number":49,"year":111,"exam":"111教育補考","question":"Dancing can be a ______ for two strangers. They can understand each other when they dance together.","options":{"A":"good habit","B":"new hobby","C":"difficult job","D":"common language"},"answer":"D","explanation":"由跳舞能夠讓兩個陌生人了解彼此，可知跳舞能當作溝通的媒介，也就是兩人間的「共同語言」。"},{"number":50,"year":113,"exam":"113教育會考","question":"\"Bad traffic\" is perhaps the ______ excuse for being late when your boss knows it only takes you five minutes to walk to work.","options":{"A":"easiest","B":"oldest","C":"smartest","D":"worst"},"answer":"D","explanation":"由「老闆知道你只需花五分鐘即可步行到公司」，推知「交通壅塞」是「最差」的藉口，故選(D)。"},{"number":51,"year":103,"exam":"103教育會考","question":"Ms. Lee is a(n) ______ businesswoman. Just now in her shop, she gave me back the wallet I left on the table last week.","options":{"A":"famous","B":"honest","C":"important","D":"smart"},"answer":"B","explanation":"第二句用來補充說明第一句內容，而第二句中的 gave me back the walletI left（還給我遺留的皮夾）為誠實（honest）的行為表現，故選 (B)。"},{"number":52,"year":105,"exam":"105教育會考","question":"The paint on the wall is not as ______ as it was ten years ago. It has changed from white to gray.","options":{"A":"bright","B":"heavy","C":"sure","D":"young"},"answer":"A","explanation":"關鍵詞為 has changed from white togray（已經從白變灰），與牆壁（wall）顏色改變有關的只有選項(A)「明亮的」，故選 (A)。"},{"number":53,"year":104,"exam":"104教育會考","question":"The waiters are asked to be ______; they should always smile and remember to say \"Welcome\" and \"Please.\"","options":{"A":"honest","B":"polite","C":"special","D":"strong"},"answer":"B","explanation":"always smile（保持微笑）與 remember to say \"Welcome\" and\"Please\"（記得說「歡迎光臨」和「請」）等，均是服務生（waiters）的基本「禮貌（politeness）」，故選(B)。"},{"number":54,"year":113,"exam":"113教育會考","question":"The new guy at the help desk answers calls like a ______. There are no ups and downs in his voice and you can't tell if he is happy or sad.","options":{"A":"father","B":"foreigner","C":"radio","D":"robot"},"answer":"D","explanation":"由「聲音沒有高低起伏、無法判斷是悲傷還是快樂」，推知是他像「機器人」一樣，故選(D)。"},{"number":55,"year":111,"exam":"111教育會考","question":"I did not do my homework, so my teacher said I ______ stay after school to finish it.","options":{"A":"failed to","B":"had to","C":"hoped to","D":"used to"},"answer":"B","explanation":"沒有做功課，老師應會說「必須」放學後留下來完成，故選 (B)。"},{"number":56,"year":107,"exam":"107教育會考","question":"With the new bus line, it is much more ______ for Fanny to go to school. It saves her a lot of time now.","options":{"A":"useful","B":"possible","C":"interesting","D":"convenient"},"answer":"D","explanation":"由「新的公車路線」和「節省她很多時間」可知，Fanny去學校更「方便」了，故選 (D)。"},{"number":57,"year":107,"exam":"107教育會考","question":"The woman who lives next door to Ken is a ______ to him. They have never met and he doesn't even know her name.","options":{"A":"daughter","B":"friend","C":"stranger","D":"teacher"},"answer":"C","explanation":"由「他們從未見面，他甚至不知道她的名字」可知，住在 Ken隔壁的女人對他來說是個「陌生人」，故選 (C)。"},{"number":58,"year":112,"exam":"112教育會考","question":"I didn't take the bus today because it was ______. All the seats were taken and a lot of students were standing.","options":{"A":"dirty","B":"fast","C":"full","D":"wrong"},"answer":"C","explanation":"由後句「所有位子都被坐走，且很多學生站著」，可推知沒搭公車是因為公車「客滿」，故選(C)。"},{"number":61,"year":110,"exam":"110教育補考","question":"The ______ snow last weekend stopped us from going out, so we just watched TV at home.","options":{"A":"common","B":"enough","C":"full","D":"heavy"},"answer":"D","explanation":"會因而不能外出，應該是因為那場「大」雪，故選 (D)。"},{"number":62,"year":112,"exam":"112教育會考","question":"Jenny is already forty, doesn't have a job and often makes trouble for her parents. To them, she is really a(n) ______.","options":{"A":"daughter","B":"example","C":"gift","D":"headache"},"answer":"D","explanation":"由「已經 40 歲了，無業又常常給父母帶來麻煩」，可推知 Jenny對她父母來說是「令人頭痛的事」，故選 (D)。"},{"number":63,"year":112,"exam":"112教育會考","question":"The ______ of this shop was so bad; I never got any answer after I emailed them my questions.","options":{"A":"item","B":"business","C":"price","D":"service"},"answer":"D","explanation":"由「問問題從來得不到回覆」，可推知該店家的「服務」很差，故選 (D)。"},{"number":64,"year":110,"exam":"110教育會考","question":"Jill is ______ that the city park is closed for the music festival because now she can't jog there.","options":{"A":"excited","B":"proud","C":"scared","D":"unhappy"},"answer":"D","explanation":"關鍵詞為 can't jogthere，「無法（在公園）慢跑」，應該會「不高興」，故選 (D)。"},{"number":65,"year":107,"exam":"107教育會考","question":"The factory has been throwing trash into the river for years. Now ______ must be taken to stop this.","options":{"A":"action","B":"chances","C":"exercise","D":"notes"},"answer":"A","explanation":"要「制止」某件事情，就得採取「行動」，故選 (A)。"},{"number":66,"year":111,"exam":"111教育會考","question":"You were ______ not to lend Amy money. She never gives back what she borrows.","options":{"A":"crazy","B":"helpful","C":"wise","D":"wrong"},"answer":"C","explanation":"Amy 從來不歸還借的東西，可推知「不借她任何錢」是「明智的」，故選(C)。"},{"number":67,"year":109,"exam":"109教育會考","question":"It's great that we can buy train tickets over the phone without going out. It ______ us a lot of time.","options":{"A":"lends","B":"prepares","C":"saves","D":"takes"},"answer":"C","explanation":"不用出門，只要透過電話即可訂票，可知是「節省」了時間，故選 (C)。"},{"number":68,"year":113,"exam":"113教育會考","question":"Jasmine planned to spend her summer in the country, but right after she got there, she started to ______ the noise in the city.","options":{"A":"enjoy","B":"mind","C":"miss","D":"notice"},"answer":"C","explanation":"由「計畫在鄉下度過夏天」，且用連接詞 but連接，故前後應是衝突語意，因此推知是「懷念」城市的喧囂，故選 (C)。"},{"number":69,"year":111,"exam":"111教育補考","question":"Jimmy tried to speak in a(n) ______ voice, but we all heard every word he said.","options":{"A":"angry","B":"clear","C":"low","D":"warm"},"answer":"C","explanation":"由後句「我們都聽到他說的每一個字」及表轉折的連接詞 but可知，前句應是 Jimmy 試圖「小聲地說」。"},{"number":70,"year":110,"exam":"110教育會考","question":"Edward had worked as a computer engineer for ten years. This ______ helped him a lot when he started his own computer shop.","options":{"A":"chance","B":"experience","C":"hobby","D":"knowledge"},"answer":"B","explanation":"對電腦店開業有「幫助」的，應該是過去十年的電腦工程師「工作經驗」，故選(B)。"},{"number":71,"year":112,"exam":"112教育會考","question":"It's not easy to see those islands clearly from here on sunny days, and it's even less ______ to see them on cloudy days.","options":{"A":"difficult","B":"lucky","C":"possible","D":"special"},"answer":"C","explanation":"由前句「晴天時要清楚地看到那些島嶼已經不容易」，可推知陰天時更不「可能」，故選(C)。"},{"number":72,"year":108,"exam":"108教育會考","question":"Diane had a bad cold last week. She is still too ______ to go mountain climbing with you.","options":{"A":"busy","B":"short","C":"weak","D":"young"},"answer":"C","explanation":"由「Diane上星期得了重感冒」可知，她仍然太「虛弱」以致於不能跟你去爬山，故選 (C)。"},{"number":73,"year":113,"exam":"113教育會考","question":"Our school basketball team won the national game last night. We are so ______ them.","options":{"A":"popular with","B":"proud of","C":"sorry for","D":"worried about"},"answer":"B","explanation":"由前句「贏得全國比賽」，推知會對籃球校隊感到「驕傲」，故選 (B)。"},{"number":74,"year":103,"exam":"103教育會考","question":"Lexie ______ reading maps. Even with a map, she still cannot find her way when she is in a foreign city.","options":{"A":"is careful about","B":"is good at","C":"has fun","D":"has trouble"},"answer":"D","explanation":"第二句用來補充說明第一句內容，第二句指出，即使有了地圖，Lexie也找不到路，表示 Lexie 不會看地圖，只有選項 (D)（讀地圖）「有困難」符合意思。"},{"number":75,"year":103,"exam":"103教育會考","question":"I think the road ends here; it won't go any ______. Shouldn't we turn back?","options":{"A":"closer","B":"farther","C":"faster","D":"longer"},"answer":"B","explanation":"句中 it 指前一句的 road（路），故空格應填表示距離的選項，而選項(A) 與 (B) 均表示距離，再依句意判斷，應選(B)（路到此為止，不會）「再更遠了」。"},{"number":76,"year":107,"exam":"107教育會考","question":"You need not only good luck but also hard work to become a ______ baseball player.","options":{"A":"young","B":"successful","C":"happy","D":"friendly"},"answer":"B","explanation":"由「你不只需要好運氣還需要十分努力」可知，這是要成為一位「成功的」棒球選手的要件，故選(B)。"},{"number":77,"year":103,"exam":"103教育會考","question":"Jogging is the only exercise I enjoy. I find ______ other kinds of exercise boring.","options":{"A":"all","B":"few","C":"many","D":"some"},"answer":"A","explanation":"由第一句 the only（唯一）可判斷「其它所有（allother）」都不喜歡，故選 (A)。"},{"number":78,"year":111,"exam":"111教育補考","question":"Please send postcards to me when you are on your trip so I can ______ the fun with you.","options":{"A":"bring","B":"miss","C":"share","D":"show"},"answer":"C","explanation":"「share sth withsb」表示「和某人分享某物」，此處表「和你分享樂趣」，故選 (C)。"},{"number":79,"year":105,"exam":"105教育會考","question":"Carol sounded happy when we talked on the phone; I could feel joy in her ______.","options":{"A":"eyes","B":"mail","C":"smile","D":"voice"},"answer":"D","explanation":"關鍵詞為 talked on thephone（講電話）；講電話時，可感覺到的是對方的聲音（voice），故選 (D)。"},{"number":80,"year":111,"exam":"111教育補考","question":"Going to work has become a ______ experience for me since the metro line near my house closed. It now takes me over two hours to get to the office.","options":{"A":"past","B":"successful","C":"terrible","D":"useful"},"answer":"C","explanation":"根據語意，自從住家附近的捷運線停駛後，要花費兩個多小時才能到公司，可知上班已經成為一種「糟糕的」經驗。"},{"number":82,"year":111,"exam":"111教育會考","question":"Peter is afraid of the dark. He even leaves the ______on when sleeping.","options":{"A":"computer","B":"fans","C":"lights","D":"music"},"answer":"C","explanation":"因為害怕黑暗，表示可能甚至會連睡覺時都開著「燈」，故選 (C)。"},{"number":83,"year":112,"exam":"112教育會考","question":"Frank Kane is so good in the movie that many people ______ he will win the best actor prize.","options":{"A":"expect","B":"forget","C":"notice","D":"plan"},"answer":"A","explanation":"由「在電影裡面表現得很棒」，可推知「以致於很多人『期望』他會獲頒最佳演員獎」，故選(A)。"},{"number":84,"year":105,"exam":"105教育會考","question":"Mr. Jackson is a very ______ writer; people of all ages enjoy his stories.","options":{"A":"polite","B":"popular","C":"handsome","D":"honest"},"answer":"B","explanation":"第二句補充解釋了 Mr. Jackson 是什麼樣的作家---people of all agesenjoy his stories（所有年齡層的人都喜歡他的故事），可推知第一句是說 Mr.Jackson 是個受歡迎（popular）的作家，故選 (B)。"},{"number":85,"year":113,"exam":"113教育會考","question":"The knife doesn't cut very well. It's not as ______ as before.","options":{"A":"bright","B":"heavy","C":"quick","D":"sharp"},"answer":"D","explanation":"由前句「刀不太好切」，推知是指刀不再「鋒利」，故選 (D)。"},{"number":86,"year":112,"exam":"112教育會考","question":"I tried on these shoes in several different ______, and I thought the white pair looked best on me.","options":{"A":"colors","B":"prices","C":"shapes","D":"sizes"},"answer":"A","explanation":"由後半句 whitepair（白色那雙），可推知是試了幾種不同的「顏色」，故選 (A)。"},{"number":87,"year":111,"exam":"111教育會考","question":"Pam is a ______ baseball player; she has more fans than any other player on her team.","options":{"A":"boring","B":"heavy","C":"popular","D":"rich"},"answer":"C","explanation":"由後方描述可知 Pam擁有比任何隊上球員都要多的粉絲，表示她很「受歡迎」，故選 (C)。"},{"number":88,"year":113,"exam":"113教育會考","question":"Tomorrow is Sam's last day in the office. Nobody knows why he decided to ______.","options":{"A":"hide","B":"leave","C":"pack","D":"walk"},"answer":"B","explanation":"由前句「在辦公室的最後一天」，推知後句要表達沒人知道為何 Sam要「離開」，故選 (B)。"},{"number":89,"year":109,"exam":"109教育會考","question":"Can you ______ your feet a little off the floor? I want to see if my keys are under the sofa.","options":{"A":"check","B":"kick","C":"raise","D":"show"},"answer":"C","explanation":"由後句說要看看鑰匙是否在沙發下，可推知是要對方將腳「舉起」一下，故選(C)。"},{"number":90,"year":113,"exam":"113教育會考","question":"After winning money in the card game, Jay decided to try again. He felt that he might also be ______ a second time.","options":{"A":"famous","B":"interested","C":"lucky","D":"ready"},"answer":"C","explanation":"由前句「贏了錢」，推知再試一次的動機會是他覺得可能再次「幸運」，故選(C)。"},{"number":92,"year":113,"exam":"113教育會考","question":"Your refrigerator shouldn't be making loud noises now, but if it ______ does, just give me a call and I'll come check it again.","options":{"A":"already","B":"even","C":"finally","D":"still"},"answer":"D","explanation":"由前句「冰箱現在不應該會發出很大的聲音了」及後句「再打電話給我，我會再次檢查」，推知是如果「仍然」有聲音，故選(D)。"},{"number":93,"year":108,"exam":"108教育會考","question":"Ben always uses his birthday as a(n) ______ to ask Dad to buy him something expensive.","options":{"A":"action","B":"excuse","C":"prize","D":"rule"},"answer":"B","explanation":"「生日」會是個好「藉口」來要求他人為自己做某事，譬如，要求父親買貴重物品給自己，故選(B)。"},{"number":95,"year":108,"exam":"108教育會考","question":"Joyce tells her brother everything. She never ______ anything from him.","options":{"A":"covers","B":"believes","C":"hides","D":"takes"},"answer":"C","explanation":"由「Joyce告知她弟弟每件事」可知，她從未「隱瞞」她弟弟任何事；「hide＋sth.＋from＋sb.」表「對某人隱瞞某事」，故選(C)。"},{"number":96,"year":110,"exam":"110教育會考","question":"Duncan spent all his money trying to ______ the bookstore his mom left him. Sadly, the business never got better, and he had to close it in the end.","options":{"A":"build","B":"buy","C":"save","D":"start"},"answer":"C","explanation":"關鍵句為省略受格 that / which 的關係子句 his mom lefthim。既然是「母親留給他的」書店，Duncan應該是想設法「拯救」這間書店，故選 (C)。"},{"number":97,"year":107,"exam":"107教育會考","question":"The beach party tonight ______ the end of our summer vacation. Tomorrow we are all going back home and get ready for school.","options":{"A":"changes","B":"marks","C":"passes","D":"saves"},"answer":"B","explanation":"由「明日大家都要回家準備開學」可知，今晚的海灘派對為暑假「畫上」了句點，故選(B)。"},{"number":98,"year":105,"exam":"105教育會考","question":"The last five years have not been ______ to Jennie. Her face is covered with lines and she looks much older than she is.","options":{"A":"kind","B":"special","C":"real","D":"enough"},"answer":"A","explanation":"關鍵句為 she looks much older than sheis（她看起來比實際年紀蒼老許多），可推斷過去五年對 Jennie來說並不好過（not been kind to Jennie），故選 (A)。"},{"number":99,"year":108,"exam":"108教育會考","question":"Last night a garbage truck hit a tree and turned over. Now the street is ______ with lots of garbage.","options":{"A":"dark","B":"dirty","C":"heavy","D":"poor"},"answer":"B","explanation":"由前句「昨晚有一輛垃圾車撞到一棵樹而翻覆」可知，現在街上很「髒亂」且充滿了垃圾，故選(B)。"}];
+
+let selectedCount = null;
+let sessionQuestions = [];
+let currentIdx = 0;
+let answers = [];
+let startTime = null;
+let liveCorrect = 0;
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function formatTime(ms) {
+  const s = Math.floor(ms / 1000);
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  if (m === 0) return `${sec} 秒`;
+  return `${m} 分 ${sec} 秒`;
+}
+
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(`screen-${name}`).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── SETUP ──
+function buildSetup() {
+  document.querySelectorAll('.count-btn').forEach(btn => {
+    btn.addEventListener('click', () => selectCount(parseInt(btn.dataset.count)));
+  });
+  document.getElementById('btn-start').addEventListener('click', startQuiz);
+  document.getElementById('btn-retry').addEventListener('click', retryQuiz);
+  document.getElementById('btn-next-round').addEventListener('click', nextRound);
+  document.getElementById('btn-next').addEventListener('click', nextQuestion);
+}
+
+function selectCount(n) {
+  selectedCount = n;
+  document.querySelectorAll('.count-btn').forEach(b => {
+    b.classList.toggle('active', parseInt(b.dataset.count) === n);
+  });
+  document.getElementById('btn-start').disabled = false;
+}
+
+function startQuiz() {
+  const pool = shuffle(QUESTIONS);
+  sessionQuestions = pool.slice(0, selectedCount);
+  currentIdx = 0;
+  answers = [];
+  liveCorrect = 0;
+  startTime = null;
+  showScreen('quiz');
+  showQuestion();
+}
+
+// ── QUIZ ──
+function showQuestion() {
+  if (currentIdx === 0) startTime = Date.now();
+  const q = sessionQuestions[currentIdx];
+  const total = sessionQuestions.length;
+
+  document.getElementById('progress-text').textContent = `第 ${currentIdx + 1} / ${total} 題`;
+  document.getElementById('progress-bar').style.width = `${(currentIdx / total) * 100}%`;
+  document.getElementById('live-correct').textContent = liveCorrect;
+
+  // Stem - replace ___ with styled blank
+  const stem = q.question.replace(/______/g, '<span class="blank">______</span>');
+  document.getElementById('question-stem').innerHTML = stem;
+
+  // Options
+  const grid = document.getElementById('options-grid');
+  grid.innerHTML = '';
+  Object.entries(q.options).forEach(([letter, text]) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.innerHTML = `<span class="option-letter">${letter}</span><span>${text}</span>`;
+    btn.addEventListener('click', () => submitAnswer(letter));
+    grid.appendChild(btn);
+  });
+
+  // Hide feedback and next
+  const fb = document.getElementById('feedback-box');
+  fb.className = 'feedback-box';
+  document.getElementById('btn-next').className = 'btn-next';
+}
+
+function submitAnswer(chosen) {
+  const q = sessionQuestions[currentIdx];
+  const isCorrect = chosen === q.answer;
+
+  if (isCorrect) liveCorrect++;
+  answers.push({ question: q, chosen, isCorrect });
+
+  // Highlight options
+  document.querySelectorAll('.option-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    const letter = Object.keys(q.options)[i];
+    if (letter === q.answer) btn.classList.add('correct');
+    else if (letter === chosen && !isCorrect) btn.classList.add('wrong');
+  });
+
+  // Show feedback
+  const fb = document.getElementById('feedback-box');
+  const title = document.getElementById('feedback-title');
+  const ansEl = document.getElementById('feedback-answer');
+  const expEl = document.getElementById('feedback-explanation');
+
+  if (isCorrect) {
+    fb.className = 'feedback-box correct-fb show';
+    title.textContent = '🎉 Great!';
+  } else {
+    fb.className = 'feedback-box wrong-fb show';
+    title.textContent = '😢 答錯別氣餒！趕緊把單字記清楚！';
+  }
+  ansEl.textContent = `正確答案：(${q.answer}) ${q.options[q.answer]}`;
+  expEl.textContent = q.explanation;
+
+  // Update live score
+  document.getElementById('live-correct').textContent = liveCorrect;
+
+  // Show next button
+  const nextBtn = document.getElementById('btn-next');
+  nextBtn.className = 'btn-next show';
+  const isLast = currentIdx === sessionQuestions.length - 1;
+  nextBtn.textContent = isLast ? '查看結果 ✦' : '下一題 →';
+}
+
+function nextQuestion() {
+  currentIdx++;
+  if (currentIdx >= sessionQuestions.length) {
+    showResults();
+  } else {
+    showQuestion();
+  }
+}
+
+// ── RESULTS ──
+function showResults() {
+  const elapsed = Date.now() - startTime;
+  const correct = answers.filter(a => a.isCorrect).length;
+  const total = answers.length;
+  const pct = Math.round((correct / total) * 100);
+
+  // Emoji & message
+  let emoji, msg;
+  if (pct === 100) { emoji = '🏆'; msg = '完美！全對！你太強了！'; }
+  else if (pct >= 80) { emoji = '🎉'; msg = `答對率 ${pct}%，表現優秀，繼續加油！`; }
+  else if (pct >= 60) { emoji = '💪'; msg = `答對率 ${pct}%，還不錯！多刷幾遍會更好！`; }
+  else { emoji = '📖'; msg = `答對率 ${pct}%，記得把錯題的單字記熟喔！`; }
+
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-msg').textContent = msg;
+
+  // Score circle
+  const circle = document.getElementById('score-circle');
+  circle.className = 'score-circle ' + (pct >= 80 ? 'score-high' : pct >= 60 ? 'score-mid' : 'score-low');
+  document.getElementById('score-pct').textContent = pct + '%';
+
+  document.getElementById('stat-time').textContent = formatTime(elapsed);
+  document.getElementById('stat-correct').textContent = correct + ' 題';
+  document.getElementById('stat-wrong').textContent = (total - correct) + ' 題';
+
+  // Build result list: wrong first
+  const wrongAnswers = answers.filter(a => !a.isCorrect);
+  const rightAnswers = answers.filter(a => a.isCorrect);
+  const sorted = [...wrongAnswers, ...rightAnswers];
+
+  const list = document.getElementById('result-list');
+  list.innerHTML = '';
+
+  sorted.forEach((a, i) => {
+    const q = a.question;
+    const item = document.createElement('div');
+    item.className = 'result-item' + (a.isCorrect ? '' : ' wrong-item');
+
+    const optsHtml = Object.entries(q.options).map(([letter, text]) => {
+      let cls = '';
+      if (letter === q.answer) cls = 'opt-correct';
+      else if (letter === a.chosen && !a.isCorrect) cls = 'opt-wrong-chosen';
+      return `<div class="ri-opt ${cls}"><span class="opt-letter">(${letter})</span><span>${text}</span></div>`;
+    }).join('');
+
+    const ansLabel = a.isCorrect
+      ? `<span style="color:var(--green);font-weight:700">${q.answer} ✓</span>`
+      : `<span class="ri-wrong-ans">${a.chosen} → ${q.answer}</span>`;
+
+    const stemShort = q.question.length > 50 ? q.question.slice(0, 50) + '…' : q.question;
+    const wrongTag = a.isCorrect ? '' : '<span class="wrong-badge">答錯</span>';
+
+    item.innerHTML = `
+      <div class="ri-header">
+        <div class="ri-num">${i + 1}</div>
+        <div class="ri-icon">${a.isCorrect ? '✓' : '✗'}</div>
+        <div class="ri-stem">${stemShort}${wrongTag}</div>
+        <div class="ri-ans">${ansLabel}</div>
+        <div class="ri-arrow">▼</div>
+      </div>
+      <div class="ri-body">
+        <div class="ri-full-stem">${q.question.replace(/______/g, '<span class="blank">______</span>')}</div>
+        <div class="ri-options">${optsHtml}</div>
+        <div class="ri-explanation">📝 ${q.explanation}</div>
+      </div>
+    `;
+
+    item.querySelector('.ri-header').addEventListener('click', () => {
+      item.classList.toggle('open');
+    });
+
+    list.appendChild(item);
+  });
+
+  showScreen('results');
+}
+
+function retryQuiz() {
+  sessionQuestions = shuffle(sessionQuestions);
+  currentIdx = 0;
+  answers = [];
+  liveCorrect = 0;
+  startTime = null;
+  showScreen('quiz');
+  showQuestion();
+}
+
+function nextRound() {
+  selectedCount = null;
+  document.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-start').disabled = true;
+  showScreen('setup');
+}
+
+buildSetup();
+</script>
+</body>
+</html>
