@@ -718,6 +718,63 @@ let answers = [];
 let startTime = null;
 let liveCorrect = 0;
 
+// ── BALANCED RANDOM POOL ──
+// 讓題目以「洗牌後依序抽出」的方式出題。
+// 同一輪題庫抽完前，不會一直重複抽到同幾題。
+const QUESTION_DECK_KEY = 'ceec_vocab_question_deck_v1';
+
+function getQuestionId(q) {
+  return String(q.number);
+}
+
+function loadQuestionDeck() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(QUESTION_DECK_KEY) || '[]');
+    const validIds = new Set(QUESTIONS.map(getQuestionId));
+    return saved.filter(id => validIds.has(String(id))).map(String);
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveQuestionDeck(deck) {
+  localStorage.setItem(QUESTION_DECK_KEY, JSON.stringify(deck));
+}
+
+function makeNewDeck(excludeIds = []) {
+  const excludeSet = new Set(excludeIds.map(String));
+  const ids = QUESTIONS.map(getQuestionId).filter(id => !excludeSet.has(id));
+  return shuffle(ids);
+}
+
+function getBalancedQuestions(count) {
+  let deck = loadQuestionDeck();
+  const selectedIds = [];
+
+  while (selectedIds.length < count) {
+    if (deck.length === 0) {
+      // 題庫抽完後才重新洗牌；排除本次已抽到的題號，避免同一次練習重複。
+      deck = makeNewDeck(selectedIds);
+    }
+
+    const id = String(deck.shift());
+    if (!selectedIds.includes(id)) {
+      selectedIds.push(id);
+    }
+  }
+
+  saveQuestionDeck(deck);
+
+  return selectedIds
+    .map(id => QUESTIONS.find(q => getQuestionId(q) === id))
+    .filter(Boolean);
+}
+
+// 如需清空出題紀錄，可在瀏覽器 Console 執行 resetQuestionDeck()
+function resetQuestionDeck() {
+  localStorage.removeItem(QUESTION_DECK_KEY);
+}
+
 function shuffle(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -761,8 +818,9 @@ function selectCount(n) {
 }
 
 function startQuiz() {
-  const pool = shuffle(QUESTIONS);
-  sessionQuestions = pool.slice(0, selectedCount);
+  // 原本是每次從全部題庫重新隨機抽題，容易讓某些題目反覆出現。
+  // 改成 balanced random：先把題庫洗成一副牌，依序抽出；抽完才重新洗牌。
+  sessionQuestions = getBalancedQuestions(selectedCount);
   currentIdx = 0;
   answers = [];
   liveCorrect = 0;
