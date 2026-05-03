@@ -1,1210 +1,1556 @@
-{
-  "title": "103~113 歷屆會考單字題",
-  "total": 86,
-  "questions": [
-    {
-      "number": 1,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "We are surprised that Sally and Ray decided to get married. No one knows ______. They often fight with each other and are unhappy together.",
-      "options": {
-        "A": "why",
-        "B": "where",
-        "C": "when",
-        "D": "how"
-      },
-      "answer": "A",
-      "explanation": "關鍵字為 surprised，會「驚訝」表示對 Sally 與 Ray兩人決定結婚的「原因」不明，與「原因、理由」相關的疑問詞為 why，故選(A)。"
-    },
-    {
-      "number": 3,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Oliver ______ with joy when he saw his favorite band. He kept saying loudly, \"I love you guys!\"",
-      "options": {
-        "A": "waited",
-        "B": "shouted",
-        "C": "listened",
-        "D": "agreed"
-      },
-      "answer": "B",
-      "explanation": "第二句用來補充說明第一句內容，而與第二句 sayingloudly（大聲說）相關的動詞為只有選項 (B)「大聲喊叫」。"
-    },
-    {
-      "number": 4,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "More and more cows on this farm are getting sick. The problem is so ______ that the farm will be closed from tomorrow on.",
-      "options": {
-        "A": "heavy",
-        "B": "popular",
-        "C": "serious",
-        "D": "strong"
-      },
-      "answer": "C",
-      "explanation": "第二句的 The problem指的是第一句所描述的事情。第一句指出有越來越多牛隻生病，表示這問題（Theproblem）很嚴重（serious），故選 (C)。"
-    },
-    {
-      "number": 5,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "I'm glad that my school has students wear ______. I don't have to worry about what clothes to wear to school.",
-      "options": {
-        "A": "belts",
-        "B": "caps",
-        "C": "gloves",
-        "D": "uniforms"
-      },
-      "answer": "D",
-      "explanation": "關鍵詞為 what clothes towear，不用擔心「穿什麼衣服」去學校，是因為學校規定學生要穿「制服（uniforms）」，故選(D)。"
-    },
-    {
-      "number": 6,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "Jim always forgets my birthday. He has asked me many times and still can't ______ it.",
-      "options": {
-        "A": "answer",
-        "B": "celebrate",
-        "C": "remember",
-        "D": "understand"
-      },
-      "answer": "C",
-      "explanation": "關鍵字為 forgets，第二句為補充說明 Jim的這種「健忘」狀況是問了許多次，但仍然「記不得（can't remember）」，故選(C)。"
-    },
-    {
-      "number": 7,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Some songs are forgotten very quickly. A really good song can pass the test of ______ and be remembered for many, many years.",
-      "options": {
-        "A": "knowledge",
-        "B": "sound",
-        "C": "time",
-        "D": "weather"
-      },
-      "answer": "C",
-      "explanation": "are forgotten very quickly（很快被遺忘）、be remembered for many,many years（被記得多年），可判斷兩句內容均跟時間有關，故選(C)（通過）「時間」（的考驗）。"
-    },
-    {
-      "number": 8,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "My sister wants to buy a car ______ she doesn't have enough money.",
-      "options": {
-        "A": "because",
-        "B": "but",
-        "C": "if",
-        "D": "or"
-      },
-      "answer": "B",
-      "explanation": "「想要買車（wants to buy a car）」與「沒有足夠的錢（doesn't haveenough money）」之間有「轉折」之意，因此空格要填入有「轉折」意味的連接詞but，故選 (B)。"
-    },
-    {
-      "number": 11,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "Amy's father is very sick. The doctors can do nothing for him, so Amy went to the temple to ______ for him.",
-      "options": {
-        "A": "care",
-        "B": "count",
-        "C": "look",
-        "D": "pray"
-      },
-      "answer": "D",
-      "explanation": "關鍵字為temple，會到「廟宇」裡，通常是為了向神明「祈禱（pray）、祈福」，故選(D)。"
-    },
-    {
-      "number": 12,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "Chris：Which ______ looks better on me? Penny：I think purple's better. You look great in purple.",
-      "options": {
-        "A": "color",
-        "B": "grade",
-        "C": "shape",
-        "D": "size"
-      },
-      "answer": "A",
-      "explanation": "關鍵字為 purple（紫色），故選 (A)。"
-    },
-    {
-      "number": 14,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "It was ______ for us to answer the math question because we've done the same kind of questions many times.",
-      "options": {
-        "A": "common",
-        "B": "easy",
-        "C": "safe",
-        "D": "special"
-      },
-      "answer": "B",
-      "explanation": "因為已經做過同樣類型的題目很多次，要再作答應該是「容易的」，故選(B)。"
-    },
-    {
-      "number": 15,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "Every time my family goes out, my brother is always the last one to ______. We often have to wait for him for a long time.",
-      "options": {
-        "A": "cheer up",
-        "B": "get ready",
-        "C": "give up",
-        "D": "slow down"
-      },
-      "answer": "B",
-      "explanation": "由「時常必須等他很久」，可知他總是最後一個「準備好」，故選 (B)。"
-    },
-    {
-      "number": 17,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "When Cindy ______ cleaning her room, she looked around and felt proud of herself.",
-      "options": {
-        "A": "finished",
-        "B": "liked",
-        "C": "minded",
-        "D": "missed"
-      },
-      "answer": "A",
-      "explanation": "應該是因為「完成」打掃房間這件事，才會看看周圍並以自己為傲。"
-    },
-    {
-      "number": 20,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "Mr. Lee has worked in the same store for ten years; he's never thought about ______ his job.",
-      "options": {
-        "A": "changing",
-        "B": "finding",
-        "C": "remembering",
-        "D": "starting"
-      },
-      "answer": "A",
-      "explanation": "由「已在同一間店工作十年」，可推知李先生從沒想過要「換」工作，故選(A)。"
-    },
-    {
-      "number": 21,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "Lisa is happy that she got a good ______ on her history test. She prepared for it for days.",
-      "options": {
-        "A": "grade",
-        "B": "idea",
-        "C": "lesson",
-        "D": "question"
-      },
-      "answer": "A",
-      "explanation": "由「很高興」及後句說「準備了好幾天」，可知是得到了一個好「成績」。"
-    },
-    {
-      "number": 22,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "We won't see the sun even after the typhoon leaves, because the news said that heavier rain will soon ______.",
-      "options": {
-        "A": "catch",
-        "B": "follow",
-        "C": "move",
-        "D": "stop"
-      },
-      "answer": "B",
-      "explanation": "就算颱風已經離開也看不到太陽，應該是因為還有更強的雨勢「跟隨」而至，故選(B)。"
-    },
-    {
-      "number": 23,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Helen：Can you turn off the TV? I can't study with the ______. Troy：You can just go back to your room so you won't hear it.",
-      "options": {
-        "A": "noise",
-        "B": "heat",
-        "C": "power",
-        "D": "light"
-      },
-      "answer": "A",
-      "explanation": "由 hear（聽到）可判斷 Helen 是因為聲音而分心，只有選項(A)「噪音」與聲音有關，故選之。"
-    },
-    {
-      "number": 24,
-      "year": 109,
-      "exam": "109教育補考",
-      "question": "Fire fighters need to wear ______ before going into a burning house, so smoke won't get into their nose and throat.",
-      "options": {
-        "A": "belts",
-        "B": "gloves",
-        "C": "jackets",
-        "D": "masks"
-      },
-      "answer": "D",
-      "explanation": "由後半句「所以煙霧不會跑進他們的鼻喉」可知，消防員在進入著火的房子前必須戴著「面罩」，故選(D)。"
-    },
-    {
-      "number": 25,
-      "year": 109,
-      "exam": "109教育補考",
-      "question": "Although it's been ten years, it still hurts Ronald to talk about how he ______ the chance to take a picture with his favorite baseball player.",
-      "options": {
-        "A": "missed",
-        "B": "failed",
-        "C": "ended",
-        "D": "broke"
-      },
-      "answer": "A",
-      "explanation": "由句意可知，Ronald因「錯過」和他最喜歡的棒球員合照，所以雖然歷經十年，談起此事仍令他傷心，故選(A)。"
-    },
-    {
-      "number": 26,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "It's not a good idea to go mountain climbing in this bad ______. We should wait until the typhoon goes away.",
-      "options": {
-        "A": "chance",
-        "B": "dream",
-        "C": "habit",
-        "D": "weather"
-      },
-      "answer": "D",
-      "explanation": "由後句「我們應該等到颱風過去」，推知在「天氣」不好的時候去爬山不是個好主意，故選(D)。"
-    },
-    {
-      "number": 27,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "My ______ hurts so much that I cannot even turn my head.",
-      "options": {
-        "A": "arm",
-        "B": "knee",
-        "C": "neck",
-        "D": "stomach"
-      },
-      "answer": "C",
-      "explanation": "由後句「無法轉頭」，推知是「脖子」痛，故選 (C)。"
-    },
-    {
-      "number": 28,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "Mrs. Johnson can't hear very well. If you need to talk to her, you must ______.",
-      "options": {
-        "A": "explain",
-        "B": "hurry",
-        "C": "listen",
-        "D": "shout"
-      },
-      "answer": "D",
-      "explanation": "由前句「聽不清楚」，可推知若和 Johnson太太講話必須「大聲說」，故選 (D)。"
-    },
-    {
-      "number": 29,
-      "year": 110,
-      "exam": "110教育會考",
-      "question": "Steven wants to be a ______, because he loves to watch people enjoy the food he prepares.",
-      "options": {
-        "A": "cook",
-        "B": "doctor",
-        "C": "driver",
-        "D": "farmer"
-      },
-      "answer": "A",
-      "explanation": "he prepares 為省略受格 that / which 的關係子句，用來形容 thefood。而關鍵字為prepares，喜歡看人享用他「所煮」食物的人應該是「廚師」，故選 (A)。"
-    },
-    {
-      "number": 30,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "Kyle's so ______ that he always thinks he's right. That's why he never says sorry even when he does something wrong.",
-      "options": {
-        "A": "lazy",
-        "B": "proud",
-        "C": "quiet",
-        "D": "serious"
-      },
-      "answer": "B",
-      "explanation": "總是覺得自己是對的，而且做錯事也從不道歉，可知 Kyle是很「驕傲的」。"
-    },
-    {
-      "number": 31,
-      "year": 106,
-      "exam": "106教育會考",
-      "question": "In the past, people thought it was a ______ idea to send e-mails and read news online, but now it is part of our everyday life.",
-      "options": {
-        "A": "simple",
-        "B": "popular",
-        "C": "good",
-        "D": "fresh"
-      },
-      "answer": "D",
-      "explanation": "關鍵詞為 In the past 與 butnow，表示在做「過去」與「現在」的比較，且具有轉折意味；因此若對「現在」而言已成為是生活的一部分時，即表示不再同「過去」剛出爐般「新鮮（fresh）」了，故選(D)。"
-    },
-    {
-      "number": 32,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "Don't let the children swim in the river. We don't know how ______ it is. It could be dangerous.",
-      "options": {
-        "A": "deep",
-        "B": "far",
-        "C": "long",
-        "D": "thick"
-      },
-      "answer": "A",
-      "explanation": "不要讓孩子們在河裡游泳，後句又說可能很危險，可推知是不知道河有多「深」，故選(A)。"
-    },
-    {
-      "number": 33,
-      "year": 108,
-      "exam": "108教育會考",
-      "question": "Tom's voice ______ when he talks about his neighbors. He speaks faster, his face becomes redder and you can almost see fire in his eyes.",
-      "options": {
-        "A": "appears",
-        "B": "drops",
-        "C": "grows",
-        "D": "rises"
-      },
-      "answer": "D",
-      "explanation": "由後句「他臉變更紅、眼睛充滿怒火」可知，Tom在生氣，一個人生氣時，通常音量會「提高」，故選 (D)。"
-    },
-    {
-      "number": 34,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "I can't believe you ______ started doing your homework. Didn't I tell you to do it right after you got home?",
-      "options": {
-        "A": "also",
-        "B": "even",
-        "C": "just",
-        "D": "still"
-      },
-      "answer": "C",
-      "explanation": "由後句「我不是要你一回家就寫作業嗎？」可知，對方應是「剛剛才」開始寫作業。"
-    },
-    {
-      "number": 35,
-      "year": 109,
-      "exam": "109教育會考",
-      "question": "My mom puts the ______ on to keep her hands away from water when she washes the dishes.",
-      "options": {
-        "A": "gloves",
-        "B": "jacket",
-        "C": "ring",
-        "D": "socks"
-      },
-      "answer": "A",
-      "explanation": "後句提到戴上該物是為了防止洗碗時，手與水的接觸，可知戴上的是「手套」，故選(A)。"
-    },
-    {
-      "number": 36,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "The movie starts at two o'clock, ______ let's meet at the theater at one forty-five.",
-      "options": {
-        "A": "so",
-        "B": "or",
-        "C": "if",
-        "D": "because"
-      },
-      "answer": "A",
-      "explanation": "後半句說「要一點四十五在戲院碰面」是前句「電影兩點開始」的結果，故用so（所以）連接，故選 (A)。"
-    },
-    {
-      "number": 37,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "Dennis enjoys ______ in public. He is proud of his beautiful voice.",
-      "options": {
-        "A": "dancing",
-        "B": "drawing",
-        "C": "shopping",
-        "D": "singing"
-      },
-      "answer": "D",
-      "explanation": "由後句「對他優美的嗓音感到自豪」，可推知 Dennis享受在公開場合「唱歌」，故選 (D)。"
-    },
-    {
-      "number": 38,
-      "year": 109,
-      "exam": "109教育補考",
-      "question": "Dylan looks a lot younger than his ______. Though he's already 30 now, many think he's still in high school when they first meet him.",
-      "options": {
-        "A": "time",
-        "B": "mind",
-        "C": "face",
-        "D": "age"
-      },
-      "answer": "D",
-      "explanation": "由第二句「雖然已經三十歲了，但許多人第一次見到 Dylan時仍以為他只是中學生」可知，Dylan 看起來比他實際「年齡」年輕許多，故選(D)。"
-    },
-    {
-      "number": 39,
-      "year": 109,
-      "exam": "109教育會考",
-      "question": "The beach near our town is a very ______ place. Every summer at least one kid dies there in the water.",
-      "options": {
-        "A": "dangerous",
-        "B": "exciting",
-        "C": "lonely",
-        "D": "popular"
-      },
-      "answer": "A",
-      "explanation": "第二句提到每年夏天都有孩子不幸喪生，可知該海灘很「危險」，故選(A)。"
-    },
-    {
-      "number": 40,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "I told you this road went the wrong way, but you just wouldn't listen. Now we have to ______ and take another road.",
-      "options": {
-        "A": "go ahead",
-        "B": "move away",
-        "C": "pass by",
-        "D": "turn back"
-      },
-      "answer": "D",
-      "explanation": "關鍵詞為 went the wrong way（走錯路）」，走錯路通常得「調頭（turnback）」，故選 (D)。"
-    },
-    {
-      "number": 42,
-      "year": 109,
-      "exam": "109教育補考",
-      "question": "Don't forget that Mom and Dad won't be home until next Wednesday. Until ______, we have to prepare meals ourselves.",
-      "options": {
-        "A": "late",
-        "B": "now",
-        "C": "then",
-        "D": "today"
-      },
-      "answer": "C",
-      "explanation": "由第一句描述爸媽到下週三之前都不會在家，可知到「那時（下週三）」為止，我們都得自己準備餐點，故選(C)。"
-    },
-    {
-      "number": 43,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "Kevin has only enough money for the bag or the shoes. That is a hard ______ to make because he likes them both.",
-      "options": {
-        "A": "choice",
-        "B": "gift",
-        "C": "rule",
-        "D": "trick"
-      },
-      "answer": "A",
-      "explanation": "錢不夠買兩種，但又兩種都喜歡，可推知會是一個很難的「選擇」，故選(A)。"
-    },
-    {
-      "number": 44,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "Sorry, but Ms. Shih can't talk right now. Could you please call back ______?",
-      "options": {
-        "A": "finally",
-        "B": "later",
-        "C": "next",
-        "D": "slowly"
-      },
-      "answer": "B",
-      "explanation": "由現在不能通話可知，應該是請對方「晚點」再致電，故選 (B)。"
-    },
-    {
-      "number": 45,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "I used to ______ this store, but I sold it when business started to go down.",
-      "options": {
-        "A": "buy",
-        "B": "own",
-        "C": "pass",
-        "D": "visit"
-      },
-      "answer": "B",
-      "explanation": "由後句「但我在生意變差時將它賣掉了」可知，過去「擁有」這間商店。"
-    },
-    {
-      "number": 46,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "During the race yesterday, Julie ______ got to the finish line first. However, she fell at the last second and only came in third in the end.",
-      "options": {
-        "A": "almost",
-        "B": "already",
-        "C": "finally",
-        "D": "quickly"
-      },
-      "answer": "A",
-      "explanation": "由後句的說明可知，最後因為跌倒而只拿到第三名，可知是「幾乎」抵達終點線了，其他三個選項語意上都是已經抵達，與後句矛盾。"
-    },
-    {
-      "number": 47,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "Mark studies very hard and never ______ classes. He goes to school even when he is sick.",
-      "options": {
-        "A": "loses",
-        "B": "misses",
-        "C": "changes",
-        "D": "forgets"
-      },
-      "answer": "B",
-      "explanation": "第二句說明了 Mark 去上學的狀況---goes to school even when he issick（即使生病也去上學），可推知 Mark 從未錯過（nevermisses）任何一節課，故選 (B)。"
-    },
-    {
-      "number": 49,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "Dancing can be a ______ for two strangers. They can understand each other when they dance together.",
-      "options": {
-        "A": "good habit",
-        "B": "new hobby",
-        "C": "difficult job",
-        "D": "common language"
-      },
-      "answer": "D",
-      "explanation": "由跳舞能夠讓兩個陌生人了解彼此，可知跳舞能當作溝通的媒介，也就是兩人間的「共同語言」。"
-    },
-    {
-      "number": 50,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "\"Bad traffic\" is perhaps the ______ excuse for being late when your boss knows it only takes you five minutes to walk to work.",
-      "options": {
-        "A": "easiest",
-        "B": "oldest",
-        "C": "smartest",
-        "D": "worst"
-      },
-      "answer": "D",
-      "explanation": "由「老闆知道你只需花五分鐘即可步行到公司」，推知「交通壅塞」是「最差」的藉口，故選(D)。"
-    },
-    {
-      "number": 51,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Ms. Lee is a(n) ______ businesswoman. Just now in her shop, she gave me back the wallet I left on the table last week.",
-      "options": {
-        "A": "famous",
-        "B": "honest",
-        "C": "important",
-        "D": "smart"
-      },
-      "answer": "B",
-      "explanation": "第二句用來補充說明第一句內容，而第二句中的 gave me back the walletI left（還給我遺留的皮夾）為誠實（honest）的行為表現，故選 (B)。"
-    },
-    {
-      "number": 52,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "The paint on the wall is not as ______ as it was ten years ago. It has changed from white to gray.",
-      "options": {
-        "A": "bright",
-        "B": "heavy",
-        "C": "sure",
-        "D": "young"
-      },
-      "answer": "A",
-      "explanation": "關鍵詞為 has changed from white togray（已經從白變灰），與牆壁（wall）顏色改變有關的只有選項(A)「明亮的」，故選 (A)。"
-    },
-    {
-      "number": 53,
-      "year": 104,
-      "exam": "104教育會考",
-      "question": "The waiters are asked to be ______; they should always smile and remember to say \"Welcome\" and \"Please.\"",
-      "options": {
-        "A": "honest",
-        "B": "polite",
-        "C": "special",
-        "D": "strong"
-      },
-      "answer": "B",
-      "explanation": "always smile（保持微笑）與 remember to say \"Welcome\" and\"Please\"（記得說「歡迎光臨」和「請」）等，均是服務生（waiters）的基本「禮貌（politeness）」，故選(B)。"
-    },
-    {
-      "number": 54,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "The new guy at the help desk answers calls like a ______. There are no ups and downs in his voice and you can't tell if he is happy or sad.",
-      "options": {
-        "A": "father",
-        "B": "foreigner",
-        "C": "radio",
-        "D": "robot"
-      },
-      "answer": "D",
-      "explanation": "由「聲音沒有高低起伏、無法判斷是悲傷還是快樂」，推知是他像「機器人」一樣，故選(D)。"
-    },
-    {
-      "number": 55,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "I did not do my homework, so my teacher said I ______ stay after school to finish it.",
-      "options": {
-        "A": "failed to",
-        "B": "had to",
-        "C": "hoped to",
-        "D": "used to"
-      },
-      "answer": "B",
-      "explanation": "沒有做功課，老師應會說「必須」放學後留下來完成，故選 (B)。"
-    },
-    {
-      "number": 56,
-      "year": 107,
-      "exam": "107教育會考",
-      "question": "With the new bus line, it is much more ______ for Fanny to go to school. It saves her a lot of time now.",
-      "options": {
-        "A": "useful",
-        "B": "possible",
-        "C": "interesting",
-        "D": "convenient"
-      },
-      "answer": "D",
-      "explanation": "由「新的公車路線」和「節省她很多時間」可知，Fanny去學校更「方便」了，故選 (D)。"
-    },
-    {
-      "number": 57,
-      "year": 107,
-      "exam": "107教育會考",
-      "question": "The woman who lives next door to Ken is a ______ to him. They have never met and he doesn't even know her name.",
-      "options": {
-        "A": "daughter",
-        "B": "friend",
-        "C": "stranger",
-        "D": "teacher"
-      },
-      "answer": "C",
-      "explanation": "由「他們從未見面，他甚至不知道她的名字」可知，住在 Ken隔壁的女人對他來說是個「陌生人」，故選 (C)。"
-    },
-    {
-      "number": 58,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "I didn't take the bus today because it was ______. All the seats were taken and a lot of students were standing.",
-      "options": {
-        "A": "dirty",
-        "B": "fast",
-        "C": "full",
-        "D": "wrong"
-      },
-      "answer": "C",
-      "explanation": "由後句「所有位子都被坐走，且很多學生站著」，可推知沒搭公車是因為公車「客滿」，故選(C)。"
-    },
-    {
-      "number": 61,
-      "year": 110,
-      "exam": "110教育補考",
-      "question": "The ______ snow last weekend stopped us from going out, so we just watched TV at home.",
-      "options": {
-        "A": "common",
-        "B": "enough",
-        "C": "full",
-        "D": "heavy"
-      },
-      "answer": "D",
-      "explanation": "會因而不能外出，應該是因為那場「大」雪，故選 (D)。"
-    },
-    {
-      "number": 62,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "Jenny is already forty, doesn't have a job and often makes trouble for her parents. To them, she is really a(n) ______.",
-      "options": {
-        "A": "daughter",
-        "B": "example",
-        "C": "gift",
-        "D": "headache"
-      },
-      "answer": "D",
-      "explanation": "由「已經 40 歲了，無業又常常給父母帶來麻煩」，可推知 Jenny對她父母來說是「令人頭痛的事」，故選 (D)。"
-    },
-    {
-      "number": 63,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "The ______ of this shop was so bad; I never got any answer after I emailed them my questions.",
-      "options": {
-        "A": "item",
-        "B": "business",
-        "C": "price",
-        "D": "service"
-      },
-      "answer": "D",
-      "explanation": "由「問問題從來得不到回覆」，可推知該店家的「服務」很差，故選 (D)。"
-    },
-    {
-      "number": 64,
-      "year": 110,
-      "exam": "110教育會考",
-      "question": "Jill is ______ that the city park is closed for the music festival because now she can't jog there.",
-      "options": {
-        "A": "excited",
-        "B": "proud",
-        "C": "scared",
-        "D": "unhappy"
-      },
-      "answer": "D",
-      "explanation": "關鍵詞為 can't jogthere，「無法（在公園）慢跑」，應該會「不高興」，故選 (D)。"
-    },
-    {
-      "number": 65,
-      "year": 107,
-      "exam": "107教育會考",
-      "question": "The factory has been throwing trash into the river for years. Now ______ must be taken to stop this.",
-      "options": {
-        "A": "action",
-        "B": "chances",
-        "C": "exercise",
-        "D": "notes"
-      },
-      "answer": "A",
-      "explanation": "要「制止」某件事情，就得採取「行動」，故選 (A)。"
-    },
-    {
-      "number": 66,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "You were ______ not to lend Amy money. She never gives back what she borrows.",
-      "options": {
-        "A": "crazy",
-        "B": "helpful",
-        "C": "wise",
-        "D": "wrong"
-      },
-      "answer": "C",
-      "explanation": "Amy 從來不歸還借的東西，可推知「不借她任何錢」是「明智的」，故選(C)。"
-    },
-    {
-      "number": 67,
-      "year": 109,
-      "exam": "109教育會考",
-      "question": "It's great that we can buy train tickets over the phone without going out. It ______ us a lot of time.",
-      "options": {
-        "A": "lends",
-        "B": "prepares",
-        "C": "saves",
-        "D": "takes"
-      },
-      "answer": "C",
-      "explanation": "不用出門，只要透過電話即可訂票，可知是「節省」了時間，故選 (C)。"
-    },
-    {
-      "number": 68,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "Jasmine planned to spend her summer in the country, but right after she got there, she started to ______ the noise in the city.",
-      "options": {
-        "A": "enjoy",
-        "B": "mind",
-        "C": "miss",
-        "D": "notice"
-      },
-      "answer": "C",
-      "explanation": "由「計畫在鄉下度過夏天」，且用連接詞 but連接，故前後應是衝突語意，因此推知是「懷念」城市的喧囂，故選 (C)。"
-    },
-    {
-      "number": 69,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "Jimmy tried to speak in a(n) ______ voice, but we all heard every word he said.",
-      "options": {
-        "A": "angry",
-        "B": "clear",
-        "C": "low",
-        "D": "warm"
-      },
-      "answer": "C",
-      "explanation": "由後句「我們都聽到他說的每一個字」及表轉折的連接詞 but可知，前句應是 Jimmy 試圖「小聲地說」。"
-    },
-    {
-      "number": 70,
-      "year": 110,
-      "exam": "110教育會考",
-      "question": "Edward had worked as a computer engineer for ten years. This ______ helped him a lot when he started his own computer shop.",
-      "options": {
-        "A": "chance",
-        "B": "experience",
-        "C": "hobby",
-        "D": "knowledge"
-      },
-      "answer": "B",
-      "explanation": "對電腦店開業有「幫助」的，應該是過去十年的電腦工程師「工作經驗」，故選(B)。"
-    },
-    {
-      "number": 71,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "It's not easy to see those islands clearly from here on sunny days, and it's even less ______ to see them on cloudy days.",
-      "options": {
-        "A": "difficult",
-        "B": "lucky",
-        "C": "possible",
-        "D": "special"
-      },
-      "answer": "C",
-      "explanation": "由前句「晴天時要清楚地看到那些島嶼已經不容易」，可推知陰天時更不「可能」，故選(C)。"
-    },
-    {
-      "number": 72,
-      "year": 108,
-      "exam": "108教育會考",
-      "question": "Diane had a bad cold last week. She is still too ______ to go mountain climbing with you.",
-      "options": {
-        "A": "busy",
-        "B": "short",
-        "C": "weak",
-        "D": "young"
-      },
-      "answer": "C",
-      "explanation": "由「Diane上星期得了重感冒」可知，她仍然太「虛弱」以致於不能跟你去爬山，故選 (C)。"
-    },
-    {
-      "number": 73,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "Our school basketball team won the national game last night. We are so ______ them.",
-      "options": {
-        "A": "popular with",
-        "B": "proud of",
-        "C": "sorry for",
-        "D": "worried about"
-      },
-      "answer": "B",
-      "explanation": "由前句「贏得全國比賽」，推知會對籃球校隊感到「驕傲」，故選 (B)。"
-    },
-    {
-      "number": 74,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Lexie ______ reading maps. Even with a map, she still cannot find her way when she is in a foreign city.",
-      "options": {
-        "A": "is careful about",
-        "B": "is good at",
-        "C": "has fun",
-        "D": "has trouble"
-      },
-      "answer": "D",
-      "explanation": "第二句用來補充說明第一句內容，第二句指出，即使有了地圖，Lexie也找不到路，表示 Lexie 不會看地圖，只有選項 (D)（讀地圖）「有困難」符合意思。"
-    },
-    {
-      "number": 75,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "I think the road ends here; it won't go any ______. Shouldn't we turn back?",
-      "options": {
-        "A": "closer",
-        "B": "farther",
-        "C": "faster",
-        "D": "longer"
-      },
-      "answer": "B",
-      "explanation": "句中 it 指前一句的 road（路），故空格應填表示距離的選項，而選項(A) 與 (B) 均表示距離，再依句意判斷，應選(B)（路到此為止，不會）「再更遠了」。"
-    },
-    {
-      "number": 76,
-      "year": 107,
-      "exam": "107教育會考",
-      "question": "You need not only good luck but also hard work to become a ______ baseball player.",
-      "options": {
-        "A": "young",
-        "B": "successful",
-        "C": "happy",
-        "D": "friendly"
-      },
-      "answer": "B",
-      "explanation": "由「你不只需要好運氣還需要十分努力」可知，這是要成為一位「成功的」棒球選手的要件，故選(B)。"
-    },
-    {
-      "number": 77,
-      "year": 103,
-      "exam": "103教育會考",
-      "question": "Jogging is the only exercise I enjoy. I find ______ other kinds of exercise boring.",
-      "options": {
-        "A": "all",
-        "B": "few",
-        "C": "many",
-        "D": "some"
-      },
-      "answer": "A",
-      "explanation": "由第一句 the only（唯一）可判斷「其它所有（allother）」都不喜歡，故選 (A)。"
-    },
-    {
-      "number": 78,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "Please send postcards to me when you are on your trip so I can ______ the fun with you.",
-      "options": {
-        "A": "bring",
-        "B": "miss",
-        "C": "share",
-        "D": "show"
-      },
-      "answer": "C",
-      "explanation": "「share sth withsb」表示「和某人分享某物」，此處表「和你分享樂趣」，故選 (C)。"
-    },
-    {
-      "number": 79,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "Carol sounded happy when we talked on the phone; I could feel joy in her ______.",
-      "options": {
-        "A": "eyes",
-        "B": "mail",
-        "C": "smile",
-        "D": "voice"
-      },
-      "answer": "D",
-      "explanation": "關鍵詞為 talked on thephone（講電話）；講電話時，可感覺到的是對方的聲音（voice），故選 (D)。"
-    },
-    {
-      "number": 80,
-      "year": 111,
-      "exam": "111教育補考",
-      "question": "Going to work has become a ______ experience for me since the metro line near my house closed. It now takes me over two hours to get to the office.",
-      "options": {
-        "A": "past",
-        "B": "successful",
-        "C": "terrible",
-        "D": "useful"
-      },
-      "answer": "C",
-      "explanation": "根據語意，自從住家附近的捷運線停駛後，要花費兩個多小時才能到公司，可知上班已經成為一種「糟糕的」經驗。"
-    },
-    {
-      "number": 82,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "Peter is afraid of the dark. He even leaves the ______on when sleeping.",
-      "options": {
-        "A": "computer",
-        "B": "fans",
-        "C": "lights",
-        "D": "music"
-      },
-      "answer": "C",
-      "explanation": "因為害怕黑暗，表示可能甚至會連睡覺時都開著「燈」，故選 (C)。"
-    },
-    {
-      "number": 83,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "Frank Kane is so good in the movie that many people ______ he will win the best actor prize.",
-      "options": {
-        "A": "expect",
-        "B": "forget",
-        "C": "notice",
-        "D": "plan"
-      },
-      "answer": "A",
-      "explanation": "由「在電影裡面表現得很棒」，可推知「以致於很多人『期望』他會獲頒最佳演員獎」，故選(A)。"
-    },
-    {
-      "number": 84,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "Mr. Jackson is a very ______ writer; people of all ages enjoy his stories.",
-      "options": {
-        "A": "polite",
-        "B": "popular",
-        "C": "handsome",
-        "D": "honest"
-      },
-      "answer": "B",
-      "explanation": "第二句補充解釋了 Mr. Jackson 是什麼樣的作家---people of all agesenjoy his stories（所有年齡層的人都喜歡他的故事），可推知第一句是說 Mr.Jackson 是個受歡迎（popular）的作家，故選 (B)。"
-    },
-    {
-      "number": 85,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "The knife doesn't cut very well. It's not as ______ as before.",
-      "options": {
-        "A": "bright",
-        "B": "heavy",
-        "C": "quick",
-        "D": "sharp"
-      },
-      "answer": "D",
-      "explanation": "由前句「刀不太好切」，推知是指刀不再「鋒利」，故選 (D)。"
-    },
-    {
-      "number": 86,
-      "year": 112,
-      "exam": "112教育會考",
-      "question": "I tried on these shoes in several different ______, and I thought the white pair looked best on me.",
-      "options": {
-        "A": "colors",
-        "B": "prices",
-        "C": "shapes",
-        "D": "sizes"
-      },
-      "answer": "A",
-      "explanation": "由後半句 whitepair（白色那雙），可推知是試了幾種不同的「顏色」，故選 (A)。"
-    },
-    {
-      "number": 87,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "Pam is a ______ baseball player; she has more fans than any other player on her team.",
-      "options": {
-        "A": "boring",
-        "B": "heavy",
-        "C": "popular",
-        "D": "rich"
-      },
-      "answer": "C",
-      "explanation": "由後方描述可知 Pam擁有比任何隊上球員都要多的粉絲，表示她很「受歡迎」，故選 (C)。"
-    },
-    {
-      "number": 88,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "Tomorrow is Sam's last day in the office. Nobody knows why he decided to ______.",
-      "options": {
-        "A": "hide",
-        "B": "leave",
-        "C": "pack",
-        "D": "walk"
-      },
-      "answer": "B",
-      "explanation": "由前句「在辦公室的最後一天」，推知後句要表達沒人知道為何 Sam要「離開」，故選 (B)。"
-    },
-    {
-      "number": 89,
-      "year": 109,
-      "exam": "109教育會考",
-      "question": "Can you ______ your feet a little off the floor? I want to see if my keys are under the sofa.",
-      "options": {
-        "A": "check",
-        "B": "kick",
-        "C": "raise",
-        "D": "show"
-      },
-      "answer": "C",
-      "explanation": "由後句說要看看鑰匙是否在沙發下，可推知是要對方將腳「舉起」一下，故選(C)。"
-    },
-    {
-      "number": 90,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "After winning money in the card game, Jay decided to try again. He felt that he might also be ______ a second time.",
-      "options": {
-        "A": "famous",
-        "B": "interested",
-        "C": "lucky",
-        "D": "ready"
-      },
-      "answer": "C",
-      "explanation": "由前句「贏了錢」，推知再試一次的動機會是他覺得可能再次「幸運」，故選(C)。"
-    },
-    {
-      "number": 92,
-      "year": 113,
-      "exam": "113教育會考",
-      "question": "Your refrigerator shouldn't be making loud noises now, but if it ______ does, just give me a call and I'll come check it again.",
-      "options": {
-        "A": "already",
-        "B": "even",
-        "C": "finally",
-        "D": "still"
-      },
-      "answer": "D",
-      "explanation": "由前句「冰箱現在不應該會發出很大的聲音了」及後句「再打電話給我，我會再次檢查」，推知是如果「仍然」有聲音，故選(D)。"
-    },
-    {
-      "number": 93,
-      "year": 108,
-      "exam": "108教育會考",
-      "question": "Ben always uses his birthday as a(n) ______ to ask Dad to buy him something expensive.",
-      "options": {
-        "A": "action",
-        "B": "excuse",
-        "C": "prize",
-        "D": "rule"
-      },
-      "answer": "B",
-      "explanation": "「生日」會是個好「藉口」來要求他人為自己做某事，譬如，要求父親買貴重物品給自己，故選(B)。"
-    },
-    {
-      "number": 94,
-      "year": 111,
-      "exam": "111教育會考",
-      "question": "While reading this story, Brad saw the word \"trolling\" and didn't know what it meant. ![](media/image14.wmf) He found several meanings of the word in a dictionary. Which one should Brad choose?",
-      "options": {
-        "A": "To celebrate in song.",
-        "B": "To make someone or something move around.",
-        "C": "To pull a fishing line through the water, often from a boat.",
-        "D": "To write something on the Internet to hurt someone or make them angry."
-      },
-      "answer": "D",
-      "explanation": "由後文可知 Josh分享了對表演的看法，卻得到不好的回饋，因為大家只想聽好話，可推斷大家可能是反過來「傷害、攻擊」他，且由第一句可看出Josh 是在「螢幕上」看到這些網路言論，故可推知 trolling為「網路霸凌」，最合適的定義為 (D)。"
-    },
-    {
-      "number": 95,
-      "year": 108,
-      "exam": "108教育會考",
-      "question": "Joyce tells her brother everything. She never ______ anything from him.",
-      "options": {
-        "A": "covers",
-        "B": "believes",
-        "C": "hides",
-        "D": "takes"
-      },
-      "answer": "C",
-      "explanation": "由「Joyce告知她弟弟每件事」可知，她從未「隱瞞」她弟弟任何事；「hide＋sth.＋from＋sb.」表「對某人隱瞞某事」，故選(C)。"
-    },
-    {
-      "number": 96,
-      "year": 110,
-      "exam": "110教育會考",
-      "question": "Duncan spent all his money trying to ______ the bookstore his mom left him. Sadly, the business never got better, and he had to close it in the end.",
-      "options": {
-        "A": "build",
-        "B": "buy",
-        "C": "save",
-        "D": "start"
-      },
-      "answer": "C",
-      "explanation": "關鍵句為省略受格 that / which 的關係子句 his mom lefthim。既然是「母親留給他的」書店，Duncan應該是想設法「拯救」這間書店，故選 (C)。"
-    },
-    {
-      "number": 97,
-      "year": 107,
-      "exam": "107教育會考",
-      "question": "The beach party tonight ______ the end of our summer vacation. Tomorrow we are all going back home and get ready for school.",
-      "options": {
-        "A": "changes",
-        "B": "marks",
-        "C": "passes",
-        "D": "saves"
-      },
-      "answer": "B",
-      "explanation": "由「明日大家都要回家準備開學」可知，今晚的海灘派對為暑假「畫上」了句點，故選(B)。"
-    },
-    {
-      "number": 98,
-      "year": 105,
-      "exam": "105教育會考",
-      "question": "The last five years have not been ______ to Jennie. Her face is covered with lines and she looks much older than she is.",
-      "options": {
-        "A": "kind",
-        "B": "special",
-        "C": "real",
-        "D": "enough"
-      },
-      "answer": "A",
-      "explanation": "關鍵句為 she looks much older than sheis（她看起來比實際年紀蒼老許多），可推斷過去五年對 Jennie來說並不好過（not been kind to Jennie），故選 (A)。"
-    },
-    {
-      "number": 99,
-      "year": 108,
-      "exam": "108教育會考",
-      "question": "Last night a garbage truck hit a tree and turned over. Now the street is ______ with lots of garbage.",
-      "options": {
-        "A": "dark",
-        "B": "dirty",
-        "C": "heavy",
-        "D": "poor"
-      },
-      "answer": "B",
-      "explanation": "由前句「昨晚有一輛垃圾車撞到一棵樹而翻覆」可知，現在街上很「髒亂」且充滿了垃圾，故選(B)。"
-    }
-  ]
-}
+[
+  {
+    "number": 1,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "We are surprised that Sally and Ray decided to get married. No one knows ______. They often fight with each other and are unhappy together.",
+    "options": {
+      "A": "why",
+      "B": "where",
+      "C": "when",
+      "D": "how"
+    },
+    "answer": "A",
+    "explanation": "關鍵字為 surprised，會「驚訝」表示對 Sally 與 Ray 兩人決定結婚的「原因」不明，與「原因、理由」相關的疑問詞為 why，故選 (A)。"
+  },
+  {
+    "number": 2,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Oliver ______ with joy when he saw his favorite band. He kept saying loudly, “I love you guys!”",
+    "options": {
+      "A": "waited",
+      "B": "shouted",
+      "C": "listened",
+      "D": "agreed"
+    },
+    "answer": "B",
+    "explanation": "第二句用來補充說明第一句內容，而與第二句 saying loudly（大聲說）相關的動詞為只有選項 (B)「大聲喊叫」。"
+  },
+  {
+    "number": 3,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "More and more cows on this farm are getting sick. The problem is so ______ that the farm will be closed from tomorrow on.",
+    "options": {
+      "A": "heavy",
+      "B": "popular",
+      "C": "serious",
+      "D": "strong"
+    },
+    "answer": "C",
+    "explanation": "第二句的 The problem 指的是第一句所描述的事情。第一句指出有越來越多牛隻生病，表示這問題（The problem）很嚴重（serious），故選 (C)。"
+  },
+  {
+    "number": 4,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "I’m glad that my school has students wear ______. I don’t have to worry about what clothes to wear to school.",
+    "options": {
+      "A": "belts",
+      "B": "caps",
+      "C": "gloves",
+      "D": "uniforms"
+    },
+    "answer": "D",
+    "explanation": "關鍵詞為 what clothes to wear，不用擔心「穿什麼衣服」去學校，是因為學校規定學生要穿「制服（uniforms） 」，故選 (D)。"
+  },
+  {
+    "number": 5,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "Jim always forgets my birthday. He has asked me many times and still can’t ______ it.",
+    "options": {
+      "A": "answer",
+      "B": "celebrate",
+      "C": "remember",
+      "D": "understand"
+    },
+    "answer": "C",
+    "explanation": "關鍵字為 forgets，第二句為補充說明 Jim 的這種「健忘」狀況是問了許多次，但仍然「記不得（can’t remember）」，故選 (C)。"
+  },
+  {
+    "number": 6,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Some songs are forgotten very quickly. A really good song can pass the test of ______ and be remembered for many, many years.",
+    "options": {
+      "A": "knowledge",
+      "B": "sound",
+      "C": "time",
+      "D": "weather"
+    },
+    "answer": "C",
+    "explanation": "are forgotten very quickly（很快被遺忘）、be remembered for many, many years（被記得多年），可判斷兩句內容均跟時間有關，故選 (C)（通過）「時間」（的考驗）。"
+  },
+  {
+    "number": 7,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "My sister wants to buy a car ______ she doesn’t have enough money.",
+    "options": {
+      "A": "because",
+      "B": "but",
+      "C": "if",
+      "D": "or"
+    },
+    "answer": "B",
+    "explanation": "「想要買車（wants to buy a car）」與「沒有足夠的錢（doesn’t have enough money）」之間有「轉折」之意，因此空格要填入有「轉折」意味的連接詞 but，故選 (B)。"
+  },
+  {
+    "number": 8,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "Amy’s father is very sick. The doctors can do nothing for him, so Amy went to the temple to ______ for him.",
+    "options": {
+      "A": "care",
+      "B": "count",
+      "C": "look",
+      "D": "pray"
+    },
+    "answer": "D",
+    "explanation": "關鍵字為 temple，會到「廟宇」裡，通常是為了向神明「祈禱（pray）、祈福」，故選 (D)。"
+  },
+  {
+    "number": 9,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "Chris：Which ______ looks better on me? Penny：I think purple’s better. You look great in purple.",
+    "options": {
+      "A": "color",
+      "B": "grade",
+      "C": "shape",
+      "D": "size"
+    },
+    "answer": "A",
+    "explanation": "關鍵字為 purple（紫色），故選 (A)。"
+  },
+  {
+    "number": 10,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "It was ______ for us to answer the math question because we’ve done the same kind of questions many times.",
+    "options": {
+      "A": "common",
+      "B": "easy",
+      "C": "safe",
+      "D": "special"
+    },
+    "answer": "B",
+    "explanation": "因為已經做過同樣類型的題目很多次，要再作答應該是「容易的」，故選 (B)。"
+  },
+  {
+    "number": 11,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "Every time my family goes out, my brother is always the last one to ______. We often have to wait for him for a long time.",
+    "options": {
+      "A": "cheer up",
+      "B": "get ready",
+      "C": "give up",
+      "D": "slow down"
+    },
+    "answer": "B",
+    "explanation": "由「時常必須等他很久」，可知他總是最後一個「準備好」，故選 (B)。"
+  },
+  {
+    "number": 12,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "When Cindy ______ cleaning her room, she looked around and felt proud of herself.",
+    "options": {
+      "A": "finished",
+      "B": "liked",
+      "C": "minded",
+      "D": "missed"
+    },
+    "answer": "A",
+    "explanation": "應該是因為「完成」打掃房間這件事，才會看看周圍並以自己為傲。"
+  },
+  {
+    "number": 13,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Mr. Lee has worked in the same store for ten years; he’s never thought about ______ his job.",
+    "options": {
+      "A": "changing",
+      "B": "finding",
+      "C": "remembering",
+      "D": "starting"
+    },
+    "answer": "A",
+    "explanation": "由「已在同一間店工作十年」，可推知李先生從沒想過要「換」工作，故選 (A)。"
+  },
+  {
+    "number": 14,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "Lisa is happy that she got a good ______ on her history test. She prepared for it for days.",
+    "options": {
+      "A": "grade",
+      "B": "idea",
+      "C": "lesson",
+      "D": "question"
+    },
+    "answer": "A",
+    "explanation": "由「很高興」及後句說「準備了好幾天」，可知是得到了一個好「成績」。"
+  },
+  {
+    "number": 15,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "We won’t see the sun even after the typhoon leaves, because the news said that heavier rain will soon ______.",
+    "options": {
+      "A": "catch",
+      "B": "follow",
+      "C": "move",
+      "D": "stop"
+    },
+    "answer": "B",
+    "explanation": "就算颱風已經離開也看不到太陽，應該是因為還有更強的雨勢「跟隨」而至，故 選 (B)。"
+  },
+  {
+    "number": 16,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Helen：Can you turn off the TV? I can’t study with the ______. Troy：You can just go back to your room so you won’t hear it.",
+    "options": {
+      "A": "noise",
+      "B": "heat",
+      "C": "power",
+      "D": "light"
+    },
+    "answer": "A",
+    "explanation": "由 hear（聽到）可判斷 Helen 是因為聲音而分心，只有選項 (A)「噪音」與聲音有關，故選之。"
+  },
+  {
+    "number": 17,
+    "year": 109,
+    "exam": "109教育補考",
+    "question": "Fire fighters need to wear ______ before going into a burning house, so smoke won’t get into their nose and throat.",
+    "options": {
+      "A": "belts",
+      "B": "gloves",
+      "C": "jackets",
+      "D": "masks"
+    },
+    "answer": "D",
+    "explanation": "由後半句「所以煙霧不會跑進他們的鼻喉」可知，消防員在進入著火的房子前必 須戴著「面罩」，故選 (D)。"
+  },
+  {
+    "number": 18,
+    "year": 109,
+    "exam": "109教育補考",
+    "question": "Although it’s been ten years, it still hurts Ronald to talk about how he ______ the chance to take a picture with his favorite baseball player.",
+    "options": {
+      "A": "missed",
+      "B": "failed",
+      "C": "ended",
+      "D": "broke"
+    },
+    "answer": "A",
+    "explanation": "由句意可知，Ronald 因「錯過」和他最喜歡的棒球員合照，所以雖然歷經十年，談起此事仍令他傷心，故選 (A)。"
+  },
+  {
+    "number": 19,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "It’s not a good idea to go mountain climbing in this bad ______. We should wait until the typhoon goes away.",
+    "options": {
+      "A": "chance",
+      "B": "dream",
+      "C": "habit",
+      "D": "weather"
+    },
+    "answer": "D",
+    "explanation": "由後句「我們應該等到颱風過去」，推知在「天氣」不好的時候去爬山不是個好 主意，故選 (D)。"
+  },
+  {
+    "number": 20,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "My ______ hurts so much that I cannot even turn my head.",
+    "options": {
+      "A": "arm",
+      "B": "knee",
+      "C": "neck",
+      "D": "stomach"
+    },
+    "answer": "C",
+    "explanation": "由後句「無法轉頭」，推知是「脖子」痛，故選 (C)。"
+  },
+  {
+    "number": 21,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Mrs. Johnson can’t hear very well. If you need to talk to her, you must ______.",
+    "options": {
+      "A": "explain",
+      "B": "hurry",
+      "C": "listen",
+      "D": "shout"
+    },
+    "answer": "D",
+    "explanation": "由前句「聽不清楚」，可推知若和 Johnson 太太講話必須「大聲說」，故選 (D)。"
+  },
+  {
+    "number": 22,
+    "year": 110,
+    "exam": "110教育會考",
+    "question": "Steven wants to be a ______ , because he loves to watch people enjoy the food he prepares.",
+    "options": {
+      "A": "cook",
+      "B": "doctor",
+      "C": "driver",
+      "D": "farmer"
+    },
+    "answer": "A",
+    "explanation": "he prepares 為省略受格 that / which 的關係子句，用來形容 the food。而關鍵字為 prepares，喜歡看人享用他「所煮」食物的人應該是「廚師」，故選 (A)。"
+  },
+  {
+    "number": 23,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "Kyle’s so ______ that he always thinks he’s right. That’s why he never says sorry even when he does something wrong.",
+    "options": {
+      "A": "lazy",
+      "B": "proud",
+      "C": "quiet",
+      "D": "serious"
+    },
+    "answer": "B",
+    "explanation": "總是覺得自己是對的，而且做錯事也從不道歉，可知 Kyle 是很「驕傲的」。"
+  },
+  {
+    "number": 24,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "In the past, people thought it was a ______ idea to send e- mails and read news online, but now it is part of our everyday life.",
+    "options": {
+      "A": "simple",
+      "B": "popular",
+      "C": "good",
+      "D": "fresh"
+    },
+    "answer": "D",
+    "explanation": "關鍵詞為 In the past 與 but now，表示在做「過去」與「現在」的比較，且具有轉折意味；因此若對「現在」而言已 成為是生活的一部分時，即表示不再同「過去」剛出爐般「新鮮（fresh）」了，故選 (D)。"
+  },
+  {
+    "number": 25,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "Don’t let the children swim in the river. We don’t know how ______ it is. It could be dangerous.",
+    "options": {
+      "A": "deep",
+      "B": "far",
+      "C": "long",
+      "D": "thick"
+    },
+    "answer": "A",
+    "explanation": "不要讓孩子們在河裡游泳，後句又說可能很危險，可推知是不知道河有多「深」 ，故選 (A)。"
+  },
+  {
+    "number": 26,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Tom’s voice ______ when he talks about his neighbors. He speaks faster, his face becomes redder and you can almost see fire in his eyes.",
+    "options": {
+      "A": "appears",
+      "B": "drops",
+      "C": "grows",
+      "D": "rises"
+    },
+    "answer": "D",
+    "explanation": "由後句「他臉變更紅、眼睛充滿怒火」可知，Tom 在生氣，一個人生氣時，通常音量會「提高」，故選 (D)。"
+  },
+  {
+    "number": 27,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "I can’t believe you ______ started doing your homework. Didn’t I tell you to do it right after you got home?",
+    "options": {
+      "A": "also",
+      "B": "even",
+      "C": "just",
+      "D": "still"
+    },
+    "answer": "C",
+    "explanation": "由後句「我不是要你一回家就寫作業嗎？」可知，對方應是「剛剛才」開始寫作 業。"
+  },
+  {
+    "number": 28,
+    "year": 109,
+    "exam": "109教育會考",
+    "question": "My mom puts the ______ on to keep her hands away from water when she washes the dishes.",
+    "options": {
+      "A": "gloves",
+      "B": "jacket",
+      "C": "ring",
+      "D": "socks"
+    },
+    "answer": "A",
+    "explanation": "後句提到戴上該物是為了防止洗碗時，手與水的接觸，可知戴上的是「手套」， 故選 (A)。"
+  },
+  {
+    "number": 29,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "The movie starts at two o’clock, ______ let’s meet at the theater at one forty-five.",
+    "options": {
+      "A": "so",
+      "B": "or",
+      "C": "if",
+      "D": "because"
+    },
+    "answer": "A",
+    "explanation": "後半句說「要一點四十五在戲院碰面」是前句「電影兩點開始」的結果，故用 so（所以）連接，故選 (A)。"
+  },
+  {
+    "number": 30,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Dennis enjoys ______ in public. He is proud of his beautiful voice.",
+    "options": {
+      "A": "dancing",
+      "B": "drawing",
+      "C": "shopping",
+      "D": "singing"
+    },
+    "answer": "D",
+    "explanation": "由後句「對他優美的嗓音感到自豪」，可推知 Dennis 享受在公開場合「唱歌」，故選 (D)。"
+  },
+  {
+    "number": 31,
+    "year": 109,
+    "exam": "109教育補考",
+    "question": "Dylan looks a lot younger than his ______. Though he’s already 30 now, many think he’s still in high school when they first meet him.",
+    "options": {
+      "A": "time",
+      "B": "mind",
+      "C": "face",
+      "D": "age"
+    },
+    "answer": "D",
+    "explanation": "由第二句「雖然已經三十歲了，但許多人第一次見到 Dylan 時仍以為他只是中學生」可知，Dylan 看起來比他實際「年齡」年輕許多，故選 (D)。"
+  },
+  {
+    "number": 32,
+    "year": 109,
+    "exam": "109教育會考",
+    "question": "The beach near our town is a very ______ place. Every summer at least one kid dies there in the water.",
+    "options": {
+      "A": "dangerous",
+      "B": "exciting",
+      "C": "lonely",
+      "D": "popular"
+    },
+    "answer": "A",
+    "explanation": "第二句提到每年夏天都有孩子不幸喪生，可知該海灘很「危險」，故選 (A)。"
+  },
+  {
+    "number": 33,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "I told you this road went the wrong way, but you just wouldn’t listen. Now we have to ______ and take another road.",
+    "options": {
+      "A": "go ahead",
+      "B": "move away",
+      "C": "pass by",
+      "D": "turn back"
+    },
+    "answer": "D",
+    "explanation": "關鍵詞為 went the wrong way（走錯路）」，走錯路通常得「調頭（turn back）」，故選 (D)。"
+  },
+  {
+    "number": 34,
+    "year": 109,
+    "exam": "109教育補考",
+    "question": "Don’t forget that Mom and Dad won’t be home until next Wednesday. Until ______ , we have to prepare meals ourselves.",
+    "options": {
+      "A": "late",
+      "B": "now",
+      "C": "then",
+      "D": "today"
+    },
+    "answer": "C",
+    "explanation": "由第一句描述爸媽到下週三之前都不會在家，可知到「那時（下週三）」為止， 我們都得自己準備餐點，故選 (C)。"
+  },
+  {
+    "number": 35,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "Kevin has only enough money for the bag or the shoes. That is a hard ______ to make because he likes them both.",
+    "options": {
+      "A": "choice",
+      "B": "gift",
+      "C": "rule",
+      "D": "trick"
+    },
+    "answer": "A",
+    "explanation": "錢不夠買兩種，但又兩種都喜歡，可推知會是一個很難的「選擇」，故選 (A)。"
+  },
+  {
+    "number": 36,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Sorry, but Ms. Shih can’t talk right now. Could you please call back ______ ?",
+    "options": {
+      "A": "finally",
+      "B": "later",
+      "C": "next",
+      "D": "slowly"
+    },
+    "answer": "B",
+    "explanation": "由現在不能通話可知，應該是請對方「晚點」再致電，故選 (B)。"
+  },
+  {
+    "number": 37,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "I used to ______ this store, but I sold it when business started to go down.",
+    "options": {
+      "A": "buy",
+      "B": "own",
+      "C": "pass",
+      "D": "visit"
+    },
+    "answer": "B",
+    "explanation": "由後句「但我在生意變差時將它賣掉了」可知，過去「擁有」這間商店。"
+  },
+  {
+    "number": 38,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "During the race yesterday, Julie ______ got to the finish line first. However, she fell at the last second and only came in third in the end.",
+    "options": {
+      "A": "almost",
+      "B": "already",
+      "C": "finally",
+      "D": "quickly"
+    },
+    "answer": "A",
+    "explanation": "由後句的說明可知，最後因為跌倒而只拿到第三名，可知是「幾乎」抵達終點線 了，其他三個選項語意上都是已經抵達，與後句矛盾。"
+  },
+  {
+    "number": 39,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "Mark studies very hard and never ______ classes. He goes to school even when he is sick.",
+    "options": {
+      "A": "loses",
+      "B": "misses",
+      "C": "changes",
+      "D": "forgets"
+    },
+    "answer": "B",
+    "explanation": "第二句說明了 Mark 去上學的狀況—goes to school even when he is sick（即使生病也去上學），可推知 Mark 從未錯過（never misses）任何一節課，故選 (B)。"
+  },
+  {
+    "number": 40,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Dancing can be a ______ for two strangers. They can understand each other when they dance together.",
+    "options": {
+      "A": "good habit",
+      "B": "new hobby",
+      "C": "difficult job",
+      "D": "common language"
+    },
+    "answer": "D",
+    "explanation": "由跳舞能夠讓兩個陌生人了解彼此，可知跳舞能當作溝通的媒介，也就是兩人間 的「共同語言」。"
+  },
+  {
+    "number": 41,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "“Bad traffic” is perhaps the ______ excuse for being late when your boss knows it only takes you five minutes to walk to work.",
+    "options": {
+      "A": "easiest",
+      "B": "oldest",
+      "C": "smartest",
+      "D": "worst"
+    },
+    "answer": "D",
+    "explanation": "由「老闆知道你只需花五分鐘即可步行到公司」，推知「交通壅塞」是「最差」 的藉口，故選 (D)。"
+  },
+  {
+    "number": 42,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Ms. Lee is a(n) ______ businesswoman. Just now in her shop, she gave me back the wallet I left on the table last week.",
+    "options": {
+      "A": "famous",
+      "B": "honest",
+      "C": "important",
+      "D": "smart"
+    },
+    "answer": "B",
+    "explanation": "第二句用來補充說明第一句內容，而第二句中的 gave me back the wallet I left（還給我遺留的皮夾）為誠實（honest）的行為表現，故選 (B)。"
+  },
+  {
+    "number": 43,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "The paint on the wall is not as ______ as it was ten years ago. It has changed from white to gray.",
+    "options": {
+      "A": "bright",
+      "B": "heavy",
+      "C": "sure",
+      "D": "young"
+    },
+    "answer": "A",
+    "explanation": "關鍵詞為 has changed from white to gray（已經從白變灰），與牆壁（wall）顏色改變有關的只有選項 (A)「明亮的」，故選 (A)。"
+  },
+  {
+    "number": 44,
+    "year": 104,
+    "exam": "104教育會考",
+    "question": "The waiters are asked to be ______ ; they should always smile and remember to say “Welcome” and “Please.”",
+    "options": {
+      "A": "honest",
+      "B": "polite",
+      "C": "special",
+      "D": "strong"
+    },
+    "answer": "B",
+    "explanation": "always smile（保持微笑）與 remember to say “Welcome” and “Please”（記得說「歡迎光臨」和「請」）等，均是服務生（waiters）的基本「禮貌（ politeness）」，故選 (B)。"
+  },
+  {
+    "number": 45,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "The new guy at the help desk answers calls like a ______. There are no ups and downs in his voice and you can’t tell if he is happy or sad.",
+    "options": {
+      "A": "father",
+      "B": "foreigner",
+      "C": "radio",
+      "D": "robot"
+    },
+    "answer": "D",
+    "explanation": "由「聲音沒有高低起伏、無法判斷是悲傷還是快樂」，推知是他像「機器人」一 樣，故選 (D)。"
+  },
+  {
+    "number": 46,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "I did not do my homework, so my teacher said I ______ stay after school to finish it.",
+    "options": {
+      "A": "failed to",
+      "B": "had to",
+      "C": "hoped to",
+      "D": "used to"
+    },
+    "answer": "B",
+    "explanation": "沒有做功課，老師應會說「必須」放學後留下來完成，故選 (B)。"
+  },
+  {
+    "number": 47,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "With the new bus line, it is much more ______ for Fanny to go to school. It saves her a lot of time now.",
+    "options": {
+      "A": "useful",
+      "B": "possible",
+      "C": "interesting",
+      "D": "convenient"
+    },
+    "answer": "D",
+    "explanation": "由「新的公車路線」和「節省她很多時間」可知，Fanny 去學校更「方便」了，故選 (D)。"
+  },
+  {
+    "number": 48,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "The woman who lives next door to Ken is a ______ to him. They have never met and he doesn’t even know her name.",
+    "options": {
+      "A": "daughter",
+      "B": "friend",
+      "C": "stranger",
+      "D": "teacher"
+    },
+    "answer": "C",
+    "explanation": "由「他們從未見面，他甚至不知道她的名字」可知，住在 Ken 隔壁的女人對他來說是個「陌生人」，故選 (C)。"
+  },
+  {
+    "number": 49,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "I didn’t take the bus today because it was ______. All the seats were taken and a lot of students were standing.",
+    "options": {
+      "A": "dirty",
+      "B": "fast",
+      "C": "full",
+      "D": "wrong"
+    },
+    "answer": "C",
+    "explanation": "由後句「所有位子都被坐走，且很多學生站著」，可推知沒搭公車是因為公車「 客滿」，故選 (C)。"
+  },
+  {
+    "number": 50,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "The ______ snow last weekend stopped us from going out, so we just watched TV at home.",
+    "options": {
+      "A": "common",
+      "B": "enough",
+      "C": "full",
+      "D": "heavy"
+    },
+    "answer": "D",
+    "explanation": "會因而不能外出，應該是因為那場「大」雪，故選 (D)。"
+  },
+  {
+    "number": 51,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Jenny is already forty, doesn’t have a job and often makes trouble for her parents. To them, she is really a(n) ______.",
+    "options": {
+      "A": "daughter",
+      "B": "example",
+      "C": "gift",
+      "D": "headache"
+    },
+    "answer": "D",
+    "explanation": "由「已經 40 歲了，無業又常常給父母帶來麻煩」，可推知 Jenny 對她父母來說是「令人頭痛的事」，故選 (D)。"
+  },
+  {
+    "number": 52,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "The ______ of this shop was so bad; I never got any answer after I emailed them my questions.",
+    "options": {
+      "A": "item",
+      "B": "business",
+      "C": "price",
+      "D": "service"
+    },
+    "answer": "D",
+    "explanation": "由「問問題從來得不到回覆」，可推知該店家的「服務」很差，故選 (D)。"
+  },
+  {
+    "number": 53,
+    "year": 110,
+    "exam": "110教育會考",
+    "question": "Jill is ______ that the city park is closed for the music festival because now she can’t jog there.",
+    "options": {
+      "A": "excited",
+      "B": "proud",
+      "C": "scared",
+      "D": "unhappy"
+    },
+    "answer": "D",
+    "explanation": "關鍵詞為 can’t jog there，「無法（在公園）慢跑」，應該會「不高興」，故選 (D)。"
+  },
+  {
+    "number": 54,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "The factory has been throwing trash into the river for years. Now ______ must be taken to stop this.",
+    "options": {
+      "A": "action",
+      "B": "chances",
+      "C": "exercise",
+      "D": "notes"
+    },
+    "answer": "A",
+    "explanation": "要「制止」某件事情，就得採取「行動」，故選 (A)。"
+  },
+  {
+    "number": 55,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "You were ______ not to lend Amy money. She never gives back what she borrows.",
+    "options": {
+      "A": "crazy",
+      "B": "helpful",
+      "C": "wise",
+      "D": "wrong"
+    },
+    "answer": "C",
+    "explanation": "Amy 從來不歸還借的東西，可推知「不借她任何錢」是「明智的」，故選 (C)。"
+  },
+  {
+    "number": 56,
+    "year": 109,
+    "exam": "109教育會考",
+    "question": "It’s great that we can buy train tickets over the phone without going out. It ______ us a lot of time.",
+    "options": {
+      "A": "lends",
+      "B": "prepares",
+      "C": "saves",
+      "D": "takes"
+    },
+    "answer": "C",
+    "explanation": "不用出門，只要透過電話即可訂票，可知是「節省」了時間，故選 (C)。"
+  },
+  {
+    "number": 57,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "Jasmine planned to spend her summer in the country, but right after she got there, she started to ______ the noise in the city.",
+    "options": {
+      "A": "enjoy",
+      "B": "mind",
+      "C": "miss",
+      "D": "notice"
+    },
+    "answer": "C",
+    "explanation": "由「計畫在鄉下度過夏天」，且用連接詞 but 連接，故前後應是衝突語意，因此推知是「懷念」城市的喧囂，故選 (C)。"
+  },
+  {
+    "number": 58,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Jimmy tried to speak in a(n) ______ voice, but we all heard every word he said.",
+    "options": {
+      "A": "angry",
+      "B": "clear",
+      "C": "low",
+      "D": "warm"
+    },
+    "answer": "C",
+    "explanation": "由後句「我們都聽到他說的每一個字」及表轉折的連接詞 but 可知，前句應是 Jimmy 試圖「小聲地說」。"
+  },
+  {
+    "number": 59,
+    "year": 110,
+    "exam": "110教育會考",
+    "question": "Edward had worked as a computer engineer for ten years. This ______ helped him a lot when he started his own computer shop.",
+    "options": {
+      "A": "chance",
+      "B": "experience",
+      "C": "hobby",
+      "D": "knowledge"
+    },
+    "answer": "B",
+    "explanation": "對電腦店開業有「幫助」的，應該是過去十年的電腦工程師「工作經驗」，故選 (B)。"
+  },
+  {
+    "number": 60,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "It’s not easy to see those islands clearly from here on sunny days, and it’s even less ______ to see them on cloudy days.",
+    "options": {
+      "A": "difficult",
+      "B": "lucky",
+      "C": "possible",
+      "D": "special"
+    },
+    "answer": "C",
+    "explanation": "由前句「晴天時要清楚地看到那些島嶼已經不容易」，可推知陰天時更不「可能 」，故選 (C)。"
+  },
+  {
+    "number": 61,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Diane had a bad cold last week. She is still too ______ to go mountain climbing with you.",
+    "options": {
+      "A": "busy",
+      "B": "short",
+      "C": "weak",
+      "D": "young"
+    },
+    "answer": "C",
+    "explanation": "由「Diane 上星期得了重感冒」可知，她仍然太「虛弱」以致於不能跟你去爬山，故選 (C)。"
+  },
+  {
+    "number": 62,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "Our school basketball team won the national game last night. We are so ______ them.",
+    "options": {
+      "A": "popular with",
+      "B": "proud of",
+      "C": "sorry for",
+      "D": "worried about"
+    },
+    "answer": "B",
+    "explanation": "由前句「贏得全國比賽」，推知會對籃球校隊感到「驕傲」，故選 (B)。"
+  },
+  {
+    "number": 63,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Lexie ______ reading maps. Even with a map, she still cannot find her way when she is in a foreign city.",
+    "options": {
+      "A": "is careful about",
+      "B": "is good at",
+      "C": "has fun",
+      "D": "has trouble"
+    },
+    "answer": "D",
+    "explanation": "第二句用來補充說明第一句內容，第二句指出，即使有了地圖，Lexie 也找不到路，表示 Lexie 不會看地圖，只有選項 (D)（讀地圖）「有困難 」符合意思。"
+  },
+  {
+    "number": 64,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "I think the road ends here; it won’t go any ______. Shouldn’t we turn back?",
+    "options": {
+      "A": "closer",
+      "B": "farther",
+      "C": "faster",
+      "D": "longer"
+    },
+    "answer": "B",
+    "explanation": "句中 it 指前一句的 road（路），故空格應填表示距離的選項，而選項 (A) 與 (B) 均表示距離，再依句意判斷，應選 (B)（路到此為止，不會）「再更遠了」。"
+  },
+  {
+    "number": 65,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "You need not only good luck but also hard work to become a ______ baseball player.",
+    "options": {
+      "A": "young",
+      "B": "successful",
+      "C": "happy",
+      "D": "friendly"
+    },
+    "answer": "B",
+    "explanation": "由「你不只需要好運氣還需要十分努力」可知，這是要成為一位「成功的」棒球 選手的要件，故選 (B)。"
+  },
+  {
+    "number": 66,
+    "year": 103,
+    "exam": "103教育會考",
+    "question": "Jogging is the only exercise I enjoy. I find ______ other kinds of exercise boring.",
+    "options": {
+      "A": "all",
+      "B": "few",
+      "C": "many",
+      "D": "some"
+    },
+    "answer": "A",
+    "explanation": "由第一句 the only（唯一）可判斷「其它所有（all other）」都不喜歡，故選 (A)。"
+  },
+  {
+    "number": 67,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Please send postcards to me when you are on your trip so I can ______ the fun with you.",
+    "options": {
+      "A": "bring",
+      "B": "miss",
+      "C": "share",
+      "D": "show"
+    },
+    "answer": "C",
+    "explanation": "「share sth with sb」表示「和某人分享某物」，此處表「和你分享樂趣」，故選 (C)。"
+  },
+  {
+    "number": 68,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "Carol sounded happy when we talked on the phone; I could feel joy in her ______.",
+    "options": {
+      "A": "eyes",
+      "B": "mail",
+      "C": "smile",
+      "D": "voice"
+    },
+    "answer": "D",
+    "explanation": "關鍵詞為 talked on the phone（講電話）；講電話時，可感覺到的是對方的聲音（voice），故選 (D)。"
+  },
+  {
+    "number": 69,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Going to work has become a ______ experience for me since the metro line near my house closed. It now takes me over two hours to get to the office.",
+    "options": {
+      "A": "past",
+      "B": "successful",
+      "C": "terrible",
+      "D": "useful"
+    },
+    "answer": "C",
+    "explanation": "根據語意，自從住家附近的捷運線停駛後，要花費兩個多小時才能到公司，可知 上班已經成為一種「糟糕的」經驗。"
+  },
+  {
+    "number": 70,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "Peter is afraid of the dark. He even leaves the ______ on when sleeping.",
+    "options": {
+      "A": "computer",
+      "B": "fans",
+      "C": "lights",
+      "D": "music"
+    },
+    "answer": "C",
+    "explanation": "因為害怕黑暗，表示可能甚至會連睡覺時都開著「燈」，故選 (C)。"
+  },
+  {
+    "number": 71,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Frank Kane is so good in the movie that many people ______ he will win the best actor prize.",
+    "options": {
+      "A": "expect",
+      "B": "forget",
+      "C": "notice",
+      "D": "plan"
+    },
+    "answer": "A",
+    "explanation": "由「在電影裡面表現得很棒」，可推知「以致於很多人『期望』他會獲頒最佳演 員獎」，故選 (A)。"
+  },
+  {
+    "number": 72,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "Mr. Jackson is a very ______ writer; people of all ages enjoy his stories.",
+    "options": {
+      "A": "polite",
+      "B": "popular",
+      "C": "handsome",
+      "D": "honest"
+    },
+    "answer": "B",
+    "explanation": "第二句補充解釋了 Mr. Jackson 是什麼樣的作家—people of all ages enjoy his stories（所有年齡層的人都喜歡他的故事），可推知第一句是說 Mr. Jackson 是個受歡迎（popular）的作家，故選 (B)。"
+  },
+  {
+    "number": 73,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "The knife doesn’t cut very well. It’s not as ______ as before.",
+    "options": {
+      "A": "bright",
+      "B": "heavy",
+      "C": "quick",
+      "D": "sharp"
+    },
+    "answer": "D",
+    "explanation": "由前句「刀不太好切」，推知是指刀不再「鋒利」，故選 (D)。"
+  },
+  {
+    "number": 74,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "I tried on these shoes in several different ______ , and I thought the white pair looked best on me.",
+    "options": {
+      "A": "colors",
+      "B": "prices",
+      "C": "shapes",
+      "D": "sizes"
+    },
+    "answer": "A",
+    "explanation": "由後半句 white pair（白色那雙），可推知是試了幾種不同的「顏色」，故選 (A)。"
+  },
+  {
+    "number": 75,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "Pam is a ______ baseball player; she has more fans than any other player on her team.",
+    "options": {
+      "A": "boring",
+      "B": "heavy",
+      "C": "popular",
+      "D": "rich"
+    },
+    "answer": "C",
+    "explanation": "由後方描述可知 Pam 擁有比任何隊上球員都要多的粉絲，表示她很「受歡迎」，故選 (C)。"
+  },
+  {
+    "number": 76,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "Tomorrow is Sam’s last day in the office. Nobody knows why he decided to ______.",
+    "options": {
+      "A": "hide",
+      "B": "leave",
+      "C": "pack",
+      "D": "walk"
+    },
+    "answer": "B",
+    "explanation": "由前句「在辦公室的最後一天」，推知後句要表達沒人知道為何 Sam 要「離開」，故選 (B)。"
+  },
+  {
+    "number": 77,
+    "year": 109,
+    "exam": "109教育會考",
+    "question": "Can you ______ your feet a little off the floor? I want to see if my keys are under the sofa.",
+    "options": {
+      "A": "check",
+      "B": "kick",
+      "C": "raise",
+      "D": "show"
+    },
+    "answer": "C",
+    "explanation": "由後句說要看看鑰匙是否在沙發下，可推知是要對方將腳「舉起」一下，故選 (C)。"
+  },
+  {
+    "number": 78,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "After winning money in the card game, Jay decided to try again. He felt that he might also be ______ a second time.",
+    "options": {
+      "A": "famous",
+      "B": "interested",
+      "C": "lucky",
+      "D": "ready"
+    },
+    "answer": "C",
+    "explanation": "由前句「贏了錢」，推知再試一次的動機會是他覺得可能再次「幸運」，故選 (C)。"
+  },
+  {
+    "number": 79,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "Your refrigerator shouldn’t be making loud noises now, but if it ______ does, just give me a call and I’ll come check it again.",
+    "options": {
+      "A": "already",
+      "B": "even",
+      "C": "finally",
+      "D": "still"
+    },
+    "answer": "D",
+    "explanation": "由前句「冰箱現在不應該會發出很大的聲音了」及後句「再打電話給我，我會再 次檢查」，推知是如果「仍然」有聲音，故選 (D)。"
+  },
+  {
+    "number": 80,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Ben always uses his birthday as a(n) ______ to ask Dad to buy him something expensive.",
+    "options": {
+      "A": "action",
+      "B": "excuse",
+      "C": "prize",
+      "D": "rule"
+    },
+    "answer": "B",
+    "explanation": "「生日」會是個好「藉口」來要求他人為自己做某事，譬如，要求父親買貴重物 品給自己，故選 (B)。"
+  },
+  {
+    "number": 81,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "While reading this story, Brad saw the word “trolling” and didn’t know what it meant. “Josh turned off the screen and sat back. ‘Why are they trolling me like this?’ He didn’t understand. They wanted him to share what he thought about the show, and he did. And now look what he got. In the end, all they wanted was nice words.” He found several meanings of the word in a dictionary. Which one should Brad choose?",
+    "options": {
+      "A": "To celebrate in song.",
+      "B": "To make someone or something move around.",
+      "C": "To pull a fishing line through the water, often from a boat.",
+      "D": "To write something on the Internet to hurt someone or make them angry."
+    },
+    "answer": "D",
+    "explanation": "由後文可知 Josh 分享了對表演的看法，卻得到不好的回饋，因為大家只想聽好話，可推斷大家可能是反 過來「傷害、攻擊」他，且由第一句可看出 Josh 是在「螢幕上」看到這些網路言論，故可推知 trolling 為「網路霸凌」，最合適的定義為 (D)。"
+  },
+  {
+    "number": 82,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Joyce tells her brother everything. She never ______ anything from him.",
+    "options": {
+      "A": "covers",
+      "B": "believes",
+      "C": "hides",
+      "D": "takes"
+    },
+    "answer": "C",
+    "explanation": "由「Joyce 告知她弟弟每件事」可知，她從未「隱瞞」她弟弟任何事；「hide＋sth.＋from＋sb.」 表「對某人隱瞞某事」，故選 (C)。"
+  },
+  {
+    "number": 83,
+    "year": 110,
+    "exam": "110教育會考",
+    "question": "Duncan spent all his money trying to ______ the bookstore his mom left him. Sadly, the business never got better, and he had to close it in the end.",
+    "options": {
+      "A": "build",
+      "B": "buy",
+      "C": "save",
+      "D": "start"
+    },
+    "answer": "C",
+    "explanation": "關鍵句為省略受格 that / which 的關係子句 his mom left him。既然是「母親留給他的」書店，Duncan 應該是想設法「拯救」這間書店，故選 (C)。"
+  },
+  {
+    "number": 84,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "The beach party tonight ______ the end of our summer vacation. Tomorrow we are all going back home and get ready for school.",
+    "options": {
+      "A": "changes",
+      "B": "marks",
+      "C": "passes",
+      "D": "saves"
+    },
+    "answer": "B",
+    "explanation": "由「明日大家都要回家準備開學」可知，今晚的海灘派對為暑假「畫上」了句點 ，故選 (B)。"
+  },
+  {
+    "number": 85,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "The last five years have not been ______ to Jennie. Her face is covered with lines and she looks much older than she is.",
+    "options": {
+      "A": "kind",
+      "B": "special",
+      "C": "real",
+      "D": "enough"
+    },
+    "answer": "A",
+    "explanation": "關鍵句為 she looks much older than she is（她看起來比實際年紀蒼老許多），可推斷過去五年對 Jennie 來說並不好過（not been kind to Jennie），故選 (A)。"
+  },
+  {
+    "number": 86,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Last night a garbage truck hit a tree and turned over. Now the street is ______ with lots of garbage.",
+    "options": {
+      "A": "dark",
+      "B": "dirty",
+      "C": "heavy",
+      "D": "poor"
+    },
+    "answer": "B",
+    "explanation": "由前句「昨晚有一輛垃圾車撞到一棵樹而翻覆」可知，現在街上很「髒亂」且充 滿了垃圾，故選 (B)。"
+  },
+  {
+    "number": 87,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "When I was a teenager, I was very ______. But now, it’s easier for me to talk to people.",
+    "options": {
+      "A": "happy",
+      "B": "lazy",
+      "C": "popular",
+      "D": "shy"
+    },
+    "answer": "D",
+    "explanation": "後面說「現在對我來說，跟人說話比較容易了」，表示以前不太敢跟人說話，所 以應該是shy（害羞的）。"
+  },
+  {
+    "number": 88,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "Lena doesn’t want to go ______ _ with John because she is afraid of water.",
+    "options": {
+      "A": "dancing",
+      "B": "hiking",
+      "C": "sailing",
+      "D": "shopping"
+    },
+    "answer": "C",
+    "explanation": "關鍵線索是 she is afraid of water（她怕水），所以她不想從事和水有關的活動。四個選項中，只有 sailing航行／搭船 和水有直接關係。"
+  },
+  {
+    "number": 89,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "Dad is busy cooking in the kitchen. Dinner will be ______ in ten minutes.",
+    "options": {
+      "A": "free",
+      "B": "full",
+      "C": "medium",
+      "D": "ready"
+    },
+    "answer": "D",
+    "explanation": "爸爸正在廚房忙著煮飯，所以「晚餐十分鐘後會準備好」。be ready 是常見搭配，意思是「準備好了」。"
+  },
+  {
+    "number": 90,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "There are so many new ______ in the office. It’ll take me some time to remember who is who.",
+    "options": {
+      "A": "faces",
+      "B": "ideas",
+      "C": "rules",
+      "D": "tools"
+    },
+    "answer": "A",
+    "explanation": "後面說「我需要一些時間記住誰是誰」，表示辦公室裡有很多新人。new faces 是常見說法，意思是「新面孔、新來的人」。"
+  },
+  {
+    "number": 91,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "I feel like a ______. I was looking for my keys for hours but they have been in my pocket the whole time.",
+    "options": {
+      "A": "fool",
+      "B": "ghost",
+      "C": "king",
+      "D": "stranger"
+    },
+    "answer": "A",
+    "explanation": "說話者找鑰匙找了好幾個小時，結果鑰匙一直都在口袋裡，所以他覺得自己很傻 。 feel like a fool 意思是「覺得自己像個傻瓜」。"
+  },
+  {
+    "number": 92,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "It is hard for trees to ______ along this beach because of the strong winds from the sea.",
+    "options": {
+      "A": "blow",
+      "B": "build",
+      "C": "follow",
+      "D": "grow"
+    },
+    "answer": "D",
+    "explanation": "主詞是 trees（樹），地點是海邊，原因是 strong winds from the sea（來自海上的強風）。 強風會讓樹很難「生長」，所以答案是 grow（生長）。"
+  },
+  {
+    "number": 93,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "You may have a long drive because of the terrible ______. There are usually a lot of cars and buses during this time.",
+    "options": {
+      "A": "experience",
+      "B": "machine",
+      "C": "service",
+      "D": "traffic"
+    },
+    "answer": "D",
+    "explanation": "後面說「這段時間通常有很多汽車和公車」，所以前面應該是指交通很糟。terr ible traffic 是常見搭配，意思是「糟糕的交通／塞車」。"
+  },
+  {
+    "number": 94,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "In the future, there will be ______ greater basketball players than Stephen Curry, but now we believe he is the best!",
+    "options": {
+      "A": "again",
+      "B": "already",
+      "C": "never",
+      "D": "perhaps"
+    },
+    "answer": "D",
+    "explanation": "句子意思是：「未來也許會有比 Stephen Curry 更偉大的籃球員，但現在我們相信他是最好的。」這裡是在推測未來的可能性，所以用 perhaps（也許）。"
+  },
+  {
+    "number": 95,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "______ machines have been used to pick fruits for a long time, they were not used on strawberry farms until several years ago.",
+    "options": {
+      "A": "Although",
+      "B": "Because",
+      "C": "Before",
+      "D": "If"
+    },
+    "answer": "A",
+    "explanation": "前半句說「機器很久以前就被用來採水果」，後半句說「但是直到幾年前才被用 在草莓農場」。 前後語意有轉折，所以要用 Although（雖然）。"
+  },
+  {
+    "number": 96,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "There are online videos that teach you exercises you can do at home. They’ll ______ you a trip to the gym, and some money too.",
+    "options": {
+      "A": "cost",
+      "B": "give",
+      "C": "keep",
+      "D": "save"
+    },
+    "answer": "D",
+    "explanation": "線上影片教你在家運動，所以你不用去健身房，也可以省錢。save someone a trip 是常見用法，意思是「讓某人省下一趟路」。"
+  },
+  {
+    "number": 97,
+    "year": 104,
+    "exam": "104教育會考",
+    "question": "Look at the picture. The girl drew two ______ on the wall.",
+    "options": {
+      "A": "circles",
+      "B": "lines",
+      "C": "points",
+      "D": "squares"
+    },
+    "answer": "D",
+    "explanation": "牆上（on the wall）有兩個方形，故選 (D)。",
+    "image": "images/Q104.JPG"
+  },
+  {
+    "number": 98,
+    "year": 106,
+    "exam": "106教育會考",
+    "question": "Look at the picture. The dog is sitting ______.",
+    "options": {
+      "A": "on the bag",
+      "B": "next to the woman",
+      "C": "inside the bag",
+      "D": "between the woman and the bag"
+    },
+    "answer": "B",
+    "explanation": "圖中的狗坐在「女子的身邊（next to the woman）」，故選 (B)。",
+    "image": "images/Q106.JPG"
+  },
+  {
+    "number": 99,
+    "year": 105,
+    "exam": "105教育會考",
+    "question": "Look at the picture. What is the dog doing?",
+    "options": {
+      "A": "Biting the man.",
+      "B": "Crossing the street.",
+      "C": "Running after the bus.",
+      "D": "Sitting on the sidewalk."
+    },
+    "answer": "B",
+    "explanation": "圖中的狗正在過馬路（crossing the street），故選 (B)。",
+    "image": "images/Q105.JPG"
+  },
+  {
+    "number": 100,
+    "year": 107,
+    "exam": "107教育會考",
+    "question": "Look at the picture. The girl is ______ the clothes.",
+    "options": {
+      "A": "making",
+      "B": "packing",
+      "C": "showing",
+      "D": "washing"
+    },
+    "answer": "B",
+    "explanation": "由圖片可知女孩正在「打包」衣物，故選 (B)。",
+    "image": "images/Q107.JPG"
+  },
+  {
+    "number": 101,
+    "year": 109,
+    "exam": "109教育會考",
+    "question": "Look at the picture. The man is holding one of the ______.",
+    "options": {
+      "A": "bowls",
+      "B": "glasses",
+      "C": "plates",
+      "D": "spoons"
+    },
+    "answer": "B",
+    "explanation": "由圖片可知，男子手中拿的是「玻璃杯」，故選 (B)。",
+    "image": "images/Q109.JPG"
+  },
+  {
+    "number": 102,
+    "year": 108,
+    "exam": "108教育會考",
+    "question": "Look at the picture. The mother duck is ______ the baby ducks across the street.",
+    "options": {
+      "A": "carrying",
+      "B": "leading",
+      "C": "pushing",
+      "D": "watching"
+    },
+    "answer": "B",
+    "explanation": "由圖片可知，鴨媽媽正在「帶領」鴨寶寶們過馬路，故選 (B)。",
+    "image": "images/Q108.JPG"
+  },
+  {
+    "number": 103,
+    "year": 111,
+    "exam": "111教育補考",
+    "question": "Look at the picture. Which is true?",
+    "options": {
+      "A": "The little boy is closing his eyes.",
+      "B": "The young man is drinking water.",
+      "C": "The old woman is holding a bottle.",
+      "D": "The young woman is having a steak."
+    },
+    "answer": "C",
+    "explanation": "由圖片可知，男孩眼睛張開，年輕男子正在吃牛排，「老太太正握著一個瓶子」 ，符合圖中敘述特徵的為 (C)。",
+    "image": "images/Q111-2.JPG"
+  },
+  {
+    "number": 104,
+    "year": 109,
+    "exam": "109教育補考",
+    "question": "Look at the picture. A boy in shorts is sleeping ______.",
+    "options": {
+      "A": "by the river",
+      "B": "on the bench",
+      "C": "under the tree",
+      "D": "next to the car"
+    },
+    "answer": "A",
+    "explanation": "由圖片可知，一名身穿短褲的男孩正「在河邊」睡覺，故選 (A)。",
+    "image": "images/Q109-2.JPG"
+  },
+  {
+    "number": 105,
+    "year": 110,
+    "exam": "110教育會考",
+    "question": "In the picture, the boy is ______ the old man.",
+    "options": {
+      "A": "smiling at",
+      "B": "dancing with",
+      "C": "cheering for",
+      "D": "bowing to"
+    },
+    "answer": "D",
+    "explanation": "圖片中，男孩正在對長者「鞠躬敬禮」，故選 (D)。",
+    "image": "images/Q110.JPG"
+  },
+  {
+    "number": 106,
+    "year": 111,
+    "exam": "111教育會考",
+    "question": "Look at the picture. The woman is putting ______ on the cake.",
+    "options": {
+      "A": "candles",
+      "B": "forks",
+      "C": "plates",
+      "D": "strawberries"
+    },
+    "answer": "A",
+    "explanation": "由圖可知，該女子正在將「蠟燭」放到蛋糕上，故選 (A)。",
+    "image": "images/Q111.JPG"
+  },
+  {
+    "number": 107,
+    "year": 110,
+    "exam": "110教育補考",
+    "question": "(In the police station) When the police ask Chris who took his wallet on the bus, he points to the person who has long hair and is wearing a hat, a vest, and pants. Look at the picture. Who is the person Chris points to?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "explanation": "由敘述可知，該人「留長髮、戴帽子、穿背心及長褲」，圖中符合這些特徵的為 (B)。",
+    "image": "images/Q110-2.JPG"
+  },
+  {
+    "number": 108,
+    "year": 113,
+    "exam": "113教育會考",
+    "question": "Look at the picture. There is ______ under the door.",
+    "options": {
+      "A": "an envelope",
+      "B": "a plant",
+      "C": "a sign",
+      "D": "an umbrella"
+    },
+    "answer": "A",
+    "explanation": "由圖片可知，在門底下的是「信封」，故選 (A)。",
+    "image": "images/Q113.JPG"
+  },
+  {
+    "number": 109,
+    "year": 112,
+    "exam": "112教育會考",
+    "question": "Look at the picture. The man is holding a ______ of grapes in his hands.",
+    "options": {
+      "A": "bag",
+      "B": "basket",
+      "C": "bowl",
+      "D": "box"
+    },
+    "answer": "B",
+    "explanation": "由圖片可知，男人手上正拿著一「籃」葡萄，故選 (B)。",
+    "image": "images/Q112.JPG"
+  },
+  {
+    "number": 110,
+    "year": 114,
+    "exam": "114教育會考",
+    "question": "Look at the picture. A ______ is flying over the houses.",
+    "options": {
+      "A": "bird",
+      "B": "butterfly",
+      "C": "kite",
+      "D": "plane"
+    },
+    "answer": "D",
+    "explanation": "由圖片可知，房子上方的是飛機 (plane)。",
+    "image": "images/Q114.JPG"
+  }
+]
